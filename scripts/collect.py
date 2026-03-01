@@ -359,6 +359,9 @@ def main():
         new_count += len(new_gov24)
         print(f"[보조금24] 신규 {len(new_gov24)}건 추가")
 
+    # 5. 기존 데이터 포함 전체에 지역 필터 재적용
+    announcements = filter_by_region(announcements, regions)
+
     # 6. 중복 제거 (사업명 + 소관기관 기준)
     announcements = deduplicate(announcements)
 
