@@ -9,8 +9,13 @@
 <body>
   <div class="container">
     <header>
-      <h1>GovBot</h1>
-      <p class="subtitle">정부 지원사업 Fix 보드</p>
+      <div class="header-row">
+        <div>
+          <h1>GovBot</h1>
+          <p class="subtitle">정부 지원사업 Fix 보드</p>
+        </div>
+        <button class="settings-btn" id="open-settings" title="AI 설정">⚙️</button>
+      </div>
     </header>
 
     <div class="controls">
@@ -49,6 +54,85 @@
     <footer>
       <span id="last-updated"></span>
     </footer>
+  </div>
+
+  <!-- AI 설정 모달 -->
+  <div class="modal-overlay" id="settings-modal">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>AI 설정</h2>
+        <button class="modal-close" id="close-settings">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="provider-tabs">
+          <button class="provider-tab active" data-provider="gemini">Gemini</button>
+          <button class="provider-tab" data-provider="openai">ChatGPT</button>
+        </div>
+
+        <!-- Gemini 설정 -->
+        <div class="provider-panel active" id="panel-gemini">
+          <div class="field">
+            <label for="gemini-key">API Key</label>
+            <div class="key-input-row">
+              <input type="password" id="gemini-key" placeholder="Google AI Studio에서 발급받은 키" />
+              <button class="toggle-key-btn" data-target="gemini-key">👁</button>
+            </div>
+            <p class="field-hint">
+              <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">Google AI Studio</a>에서 무료 발급
+            </p>
+          </div>
+          <div class="field">
+            <label for="gemini-model">모델</label>
+            <select id="gemini-model">
+              <option value="gemini-2.0-flash">Gemini 2.0 Flash (무료, 추천)</option>
+              <option value="gemini-2.0-flash-lite">Gemini 2.0 Flash Lite (무료)</option>
+              <option value="gemini-1.5-flash">Gemini 1.5 Flash (무료)</option>
+              <option value="gemini-1.5-pro">Gemini 1.5 Pro (유료)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- ChatGPT 설정 -->
+        <div class="provider-panel" id="panel-openai">
+          <div class="field">
+            <label for="openai-key">API Key</label>
+            <div class="key-input-row">
+              <input type="password" id="openai-key" placeholder="OpenAI에서 발급받은 키" />
+              <button class="toggle-key-btn" data-target="openai-key">👁</button>
+            </div>
+            <p class="field-hint">
+              <a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener">OpenAI Platform</a>에서 발급
+            </p>
+          </div>
+          <div class="field">
+            <label for="openai-model">모델</label>
+            <select id="openai-model">
+              <option value="gpt-4o-mini">GPT-4o Mini (저렴, 추천)</option>
+              <option value="gpt-4o">GPT-4o (유료)</option>
+              <option value="gpt-4.1-nano">GPT-4.1 Nano (저렴)</option>
+              <option value="gpt-4.1-mini">GPT-4.1 Mini (유료)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>사용할 AI</label>
+          <div class="active-provider-select">
+            <label class="radio-label">
+              <input type="radio" name="active-provider" value="gemini" checked /> Gemini
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="active-provider" value="openai" /> ChatGPT
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-save" id="save-settings">저장</button>
+      </div>
+    </div>
   </div>
 
   <script src="app.js"></script>
