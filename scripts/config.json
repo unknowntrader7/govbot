@@ -2,5 +2,19 @@
   "keywords": [],
   "categories": [],
   "regions": ["서울"],
-  "exclude_keywords": []
+  "exclude_keywords": [],
+  "exclude_organizations": [
+    "국방부",
+    "방위사업청",
+    "병무청",
+    "외교부",
+    "대검찰청",
+    "법무부",
+    "국세청",
+    "관세청",
+    "조달청",
+    "인사혁신처",
+    "통일부",
+    "국방전직교육원"
+  ]
 }

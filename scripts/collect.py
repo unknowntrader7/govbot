@@ -274,6 +274,17 @@ def filter_by_region(items, regions):
     return filtered
 
 
+def filter_by_organization(items, exclude_orgs):
+    """특정 소관기관을 제외한다."""
+    if not exclude_orgs:
+        return items
+    filtered = [item for item in items if item.get("organization", "") not in exclude_orgs]
+    removed = len(items) - len(filtered)
+    if removed > 0:
+        print(f"[기관필터] {removed}건 제외 ({len(exclude_orgs)}개 기관)")
+    return filtered
+
+
 def deduplicate(announcements):
     """사업명 + 소관기관 조합으로 중복 공고를 제거한다. 기업마당 우선."""
     seen = {}
@@ -331,6 +342,7 @@ def main():
     # 1. 설정 로드
     config = load_json(CONFIG_PATH, {})
     regions = config.get("regions", [])
+    exclude_orgs = config.get("exclude_organizations", [])
 
     # 2. 기존 데이터 로드
     announcements = load_json(ANNOUNCEMENTS_PATH, [])
@@ -361,6 +373,9 @@ def main():
 
     # 5. 기존 데이터 포함 전체에 지역 필터 재적용
     announcements = filter_by_region(announcements, regions)
+
+    # 5-1. 제외 기관 필터
+    announcements = filter_by_organization(announcements, exclude_orgs)
 
     # 6. 중복 제거 (사업명 + 소관기관 기준)
     announcements = deduplicate(announcements)
