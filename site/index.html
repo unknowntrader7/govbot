@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GovBot — 정부 지원사업 보드</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>GovBot</h1>
+      <p class="subtitle">정부 지원사업 Fix 보드</p>
+    </header>
+
+    <div class="controls">
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-category="전체">전체</button>
+        <button class="filter-btn" data-category="금융">금융</button>
+        <button class="filter-btn" data-category="기술">기술</button>
+        <button class="filter-btn" data-category="인력">인력</button>
+        <button class="filter-btn" data-category="수출">수출</button>
+        <button class="filter-btn" data-category="내수">내수</button>
+        <button class="filter-btn" data-category="창업">창업</button>
+        <button class="filter-btn" data-category="경영">경영</button>
+        <button class="filter-btn" data-category="기타">기타</button>
+      </div>
+      <div class="search-sort">
+        <input type="text" id="search" placeholder="키워드 검색..." />
+        <select id="sort">
+          <option value="dday">마감일순</option>
+          <option value="regist">등록일순</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="stats" id="stats"></div>
+
+    <div class="card-list" id="card-list">
+      <div class="loading">공고를 불러오는 중...</div>
+    </div>
+
+    <footer>
+      <span id="last-updated"></span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
