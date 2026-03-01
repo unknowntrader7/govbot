@@ -17,6 +17,11 @@ const CHANNELS = {
     label: "입찰·조달",
     sourceLabels: { g2b: "나라장터" },
   },
+  grants: {
+    url: "data/grants.json",
+    label: "공모사업",
+    sourceLabels: { arts: "문예위", kocca: "콘진원" },
+  },
 };
 
 let currentChannel = "support";
