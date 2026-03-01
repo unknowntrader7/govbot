@@ -35,12 +35,11 @@ jobs:
           FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
         run: cd scripts && python collect_bids.py
 
-      # - name: Collect grants (Phase 4)
-      #   env:
-      #     NTIS_API_KEY: ${{ secrets.NTIS_API_KEY }}
-      #     BIZINFO_API_KEY: ${{ secrets.BIZINFO_API_KEY }}
-      #     FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
-      #   run: cd scripts && python collect_grants.py
+      - name: Collect grants
+        env:
+          KOCCA_API_KEY: ${{ secrets.KOCCA_API_KEY }}
+          FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
+        run: cd scripts && python collect_grants.py
 
       - name: Commit & push updated data
         run: |

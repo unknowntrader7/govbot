@@ -20,7 +20,7 @@ const CHANNELS = {
   grants: {
     url: "data/grants.json",
     label: "공모사업",
-    sourceLabels: { arts: "문예위", kocca: "콘진원" },
+    sourceLabels: { kocca: "콘진원", arko: "문예위" },
   },
 };
 
