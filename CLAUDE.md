@@ -1,115 +1,121 @@
-# GovBot - 정부 지원사업 자동 수집 & AI 요약 보드
+# GovBot — 정부 사업 공고 수집 & AI 요약 보드
 
 ## 프로젝트 개요
 
-정부 지원사업 공고를 매일 자동 수집하여 Cloudflare Pages 기반 Fix 보드에 표시하고, AI 요약은 사용자가 개별 공고를 클릭할 때만 온디맨드로 실행하는 스케줄러 기반 봇.
+정부 지원사업·공모사업·입찰/조달 공고를 매일 자동 수집하여 Cloudflare Pages 보드에 3탭으로 표시. AI 요약은 사용자 API 키로 온디맨드 실행.
 
-## 핵심 설계 원칙
+## 3개 채널
 
-- **비용 최소화:** AI 요약은 자동 실행하지 않음. 온디맨드 방식으로 월 $0~1 유지
-- **단순한 파이프라인:** GitHub Actions → JSON 갱신 → Cloudflare Pages 자동 배포. 별도 서버/DB 없음
-- **자동 정리:** 마감일 지난 공고는 스케줄러가 자동 삭제
+| 채널 | 소스 | 데이터 파일 | 수집 스크립트 |
+|------|------|-------------|---------------|
+| 지원사업 | 기업마당 + 보조금24 | `support.json` | `collect_support.py` |
+| 공모사업 | NTIS + 기업마당 공모분류 | `grants.json` | `collect_grants.py` |
+| 입찰/조달 | 나라장터(G2B) | `bids.json` | `collect_bids.py` |
 
 ## 기술 스택
 
-| 레이어 | 기술 |
-|--------|------|
-| 스케줄러 | GitHub Actions (cron: 매일 오전 9시 KST = UTC 0시) |
-| 수집 스크립트 | Python 3.11 + requests |
-| 데이터 소스 | 기업마당 API (`bizinfo.go.kr`) + 보조금24 API (`api.odcloud.kr`) |
-| 데이터 저장 | JSON 파일 (repo 내 `site/data/announcements.json`) |
-| 프론트엔드 | HTML/CSS/JS 정적 사이트 |
-| 호스팅 | Cloudflare Pages (GitHub 연동, 자동 빌드) |
-| AI 요약 | Claude API — Cloudflare Workers 프록시 경유 (Phase 2) |
+- **스케줄러:** GitHub Actions (평일 09:00 KST, 공휴일 제외)
+- **수집:** Python 3.11 + requests
+- **데이터:** JSON 파일 × 3 (채널별 분리, DB 없음)
+- **프론트엔드:** 바닐라 HTML/CSS/JS (프레임워크 없음)
+- **호스팅:** Cloudflare Pages (GitHub 연동)
+- **AI 요약:** Gemini / ChatGPT / Claude — 사용자 브라우저에서 직접 호출 (사용자 API 키, localStorage)
 
 ## 레포지토리 구조
 
 ```
 govbot/
 ├── .github/workflows/
-│   └── collect.yml          # GitHub Actions 워크플로우
+│   └── collect.yml              # 3개 수집 스크립트 순차 실행
 ├── scripts/
-│   ├── collect.py           # 메인 수집 스크립트
-│   ├── config.json          # 필터 설정 (키워드, 분야, 지역)
-│   └── requirements.txt     # Python 의존성
-├── site/                    # Cloudflare Pages 빌드 대상
-│   ├── index.html           # Fix 보드 메인 UI
-│   ├── style.css
-│   ├── app.js               # 프론트엔드 로직
+│   ├── common.py                # 공통 유틸 (API호출, 지역필터, D-day, JSON I/O)
+│   ├── config.json              # 채널별 설정
+│   ├── collect_support.py       # 지원사업 (기업마당 + 보조금24)
+│   ├── collect_bids.py          # 입찰/조달 (나라장터)
+│   ├── collect_grants.py        # 공모사업 (NTIS + 기업마당 공모)
+│   └── requirements.txt
+├── site/
+│   ├── index.html               # 3탭 UI (지원사업/공모사업/입찰조달)
+│   ├── style.css                # 다크모드 지원 (CSS 변수)
+│   ├── app.js                   # 프론트엔드 로직
 │   └── data/
-│       └── announcements.json
-├── seen_ids.json            # 중복 체크용
+│       ├── support.json
+│       ├── grants.json
+│       └── bids.json
+├── seen_ids/
+│   ├── support.json
+│   ├── grants.json
+│   └── bids.json
 ├── CLAUDE.md
-├── PLAN.md
-└── README.md
+└── PLAN.md
 ```
 
-## 데이터 파이프라인
+## 현재 구현 상태
 
-```
-GitHub Actions cron → 기업마당 API + 보조금24 API 호출 → 신규 공고 필터링 → 중복 제거 → 마감 공고 삭제 → announcements.json 갱신 → git push → Cloudflare Pages 자동 배포
-```
+- ✅ Phase 1: 기업마당 + 보조금24 수집 (collect_support.py)
+- ✅ 지역 필터 (시/도 매칭 + 중앙부처 판별 `is_central_government()`)
+- ✅ 제외 기관 필터 (`exclude_organizations`)
+- ✅ 보드 UI (카드, 카테고리 필터, 검색, 정렬)
+- ✅ 다크모드, D-day 긴급 섹션 (D-3 핀), 관심 키워드 하이라이트
+- ✅ AI 요약 설정 UI (Gemini/ChatGPT/Claude 탭, API 키 입력, localStorage)
+- ✅ 모바일 반응형
+- ✅ Phase 2: 리팩토링 완료 (common.py + collect_support.py 분리)
+- ✅ Phase 3: 나라장터 입찰/조달 수집 (collect_bids.py) — API 키 등록 대기
+- ⬜ Phase 4: 공모사업 수집 (collect_grants.py)
+- ⬜ Phase 5: 프론트엔드 3탭 UI
+- ⬜ Cloudflare Pages 연결
 
-## 공고 데이터 스키마 (announcements.json)
+## 핵심 필터 로직 (common.py)
 
-```json
-{
-  "id": "PBLN_000000000111729",
-  "title": "사업명",
-  "category": "기술",
-  "organization": "소관기관",
-  "executor": "수행기관",
-  "startDate": "2026-02-01",
-  "endDate": "2026-03-15",
-  "registDate": "2026-01-28",
-  "detailUrl": "https://www.bizinfo.go.kr/...",
-  "dDay": 14,
-  "summary": null,
-  "source": "bizinfo"
-}
-```
+### 지역 필터 (`filter_by_region`)
+- 시/도 이름 매칭 (전체이름 + 약칭): "경상남도"→"경남", "서울특별시"→"서울" 등
+- 매칭되면: config의 regions 목록에 있는 지역만 통과
+- 매칭 안 되면: `is_central_government()` 판별 → 중앙부처/전국기관이면 통과, 아니면 제외
 
-- `summary`는 초기값 null → 사용자가 AI 요약 요청 시에만 채워짐 (보조금24는 서비스목적요약이 있으면 자동 채움)
-- `dDay`는 스크립트 실행 시점 기준 매번 재계산
-- `source`는 `"bizinfo"` 또는 `"gov24"` — 데이터 출처 구분 및 중복 제거에 사용
+### 중앙부처 판별 (`is_central_government`)
+- 법인 접두어 제거: (재), (주), 재단법인, 학교법인 등
+- 패턴 1: 접미사 "부"/"처"/"청" (3글자 이상)
+- 패턴 2: 접두어 "한국"/"대한"/"국립"/"국가"/"국민"/"국무"
+- 패턴 3: 명시적 전국기관 키워드 리스트 (기술보증기금, 중소벤처기업진흥공단, 금융위원회 등)
+- config의 `include_organizations`로 사용자 화이트리스트 추가 가능
 
-## API 정보
+### 기관 제외 (`filter_by_organization`)
+- config의 `exclude_organizations` 목록에 있는 기관의 공고를 제외
+- 현재: 국방부, 외교부, 법무부, 국세청, 관세청, 조달청 등 12개
 
-### 기업마당 API
-- URL: `https://www.bizinfo.go.kr/uss/rss/bizinfoApi.do`
-- 방식: GET, 응답: JSON/XML
-- 인증: `crtfcKey` 파라미터 (API 키 필수)
-- 필터: 키워드, 해시태그(금융/기술/인력/수출/내수/창업/경영/기타), 지역(17개 시도)
+## 프론트엔드 주요 기능
 
-### 보조금24 API
-- Base URL: `https://api.odcloud.kr/api`
-- 목록 조회: `GET /gov24/v3/serviceList`
-- 상세 조회: `GET /gov24/v3/serviceDetail`
-- 지원 조건: `GET /gov24/v3/supportConditions`
-- 인증: `serviceKey` 파라미터 (API 키 필수)
-- 필터: `cond[소관기관유형::LIKE]`, `cond[서비스분야::LIKE]`, `cond[서비스명::LIKE]` 등
-- 중복 제거: 사업명 + 소관기관 조합으로 기업마당과의 중복 제거
+### AI 요약 설정
+- 3개 탭: Gemini / ChatGPT / Claude
+- 각 탭에서 API 키 + 모델 선택
+- 선택된 탭 = 활성 AI 프로바이더 (`activeSettingsTab`)
+- API 키는 localStorage에 저장 (`govbot_settings`)
+- CORS 주의: Claude API는 브라우저 직접 호출 시 제한 있을 수 있음
 
-## Fix 보드 UI 요구사항
+### 다크모드
+- CSS 변수 기반 (`[data-theme="dark"]`)
+- 시스템 설정 감지 + localStorage 저장
+- 토글 버튼: 🌙 / ☀️
 
-- 카드 리스트: 사업명, 소관기관, 마감일, D-day 표시
-- D-day 색상: D-3 이하 빨강, D-7 이하 노랑, 그 외 초록
-- 분야 필터 탭: 전체/금융/기술/인력/수출/내수/창업/경영/기타
-- 키워드 검색: 클라이언트 사이드 필터링
-- 정렬: 마감일순(기본), 등록일순
-- [상세보기]: 기업마당 원문 링크 (새 탭)
-- [AI 요약]: 클릭 시 Cloudflare Worker → Claude API 호출 → 결과 표시
+### 관심 키워드
+- 설정에서 입력 (콤마 구분)
+- 매칭된 카드에 `.highlight` 클래스 → 좌측 골드 보더
 
-## 구현 로드맵
+## API 키 (GitHub Secrets)
 
-- **Phase 1 (Week 1):** 기업마당 + 보조금24 수집 스크립트 + Fix 보드 UI + GitHub Actions + Cloudflare Pages 배포 (AI 요약 없이)
-- **Phase 2 (Week 2~3):** 분야 필터, 키워드 검색, 정렬, Cloudflare Worker + Claude API 온디맨드 요약
-- **Phase 3 (Week 4~):** 매칭 필터 하이라이트, D-day 상단 고정, 모바일 반응형
+| 시크릿 | 용도 | 상태 |
+|--------|------|------|
+| `BIZINFO_API_KEY` | 기업마당 API | ✅ 등록됨 |
+| `GOV24_API_KEY` | 보조금24 API | ✅ 등록됨 |
+| `G2B_API_KEY` | 나라장터 API | ⬜ GitHub Secrets 등록 대기 |
+| `NTIS_API_KEY` | NTIS API | ⬜ 발급 필요 |
 
 ## 코딩 규칙
 
-- Python: 3.11, requests + BeautifulSoup4 사용
-- 프론트엔드: 바닐라 HTML/CSS/JS (프레임워크 없음, 정적 사이트)
-- 데이터: JSON 파일 기반 (DB 사용하지 않음)
-- API 키는 GitHub Secrets / Cloudflare Workers 환경 변수에 저장. 코드에 하드코딩 금지
-- 공공 API 크롤링 시 robots.txt 준수, 요청 간격 1~2초, User-Agent 명시
+- Python 3.11, `requests` 라이브러리
+- 프론트엔드: 바닐라 HTML/CSS/JS (프레임워크 없음)
+- JSON 파일 기반 (DB 사용 안 함)
+- API 키: GitHub Secrets / localStorage. 코드에 하드코딩 금지
+- 공공 API: robots.txt 준수, 요청 간격 1~2초
+- Git: 자동 커밋은 GitHub Actions에서만. 로컬에서는 사용자가 명시적으로 요청할 때만 커밋
+- 한국어 출력 시 Windows 콘솔 인코딩 주의 (`sys.stdout.reconfigure(encoding='utf-8')` 또는 `-X utf8`)

@@ -2,7 +2,7 @@
  * GovBot Fix 보드 — 프론트엔드 로직
  */
 
-const DATA_URL = "data/announcements.json";
+const DATA_URL = "data/support.json";
 
 let allAnnouncements = [];
 let currentCategory = "전체";

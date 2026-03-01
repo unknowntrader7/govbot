@@ -22,16 +22,29 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
-      - name: Run collector
+      - name: Collect support programs
         env:
           BIZINFO_API_KEY: ${{ secrets.BIZINFO_API_KEY }}
           GOV24_API_KEY: ${{ secrets.GOV24_API_KEY }}
           FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
-        run: python scripts/collect.py
+        run: cd scripts && python collect_support.py
+
+      - name: Collect bids
+        env:
+          G2B_API_KEY: ${{ secrets.G2B_API_KEY }}
+          FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
+        run: cd scripts && python collect_bids.py
+
+      # - name: Collect grants (Phase 4)
+      #   env:
+      #     NTIS_API_KEY: ${{ secrets.NTIS_API_KEY }}
+      #     BIZINFO_API_KEY: ${{ secrets.BIZINFO_API_KEY }}
+      #     FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
+      #   run: cd scripts && python collect_grants.py
 
       - name: Commit & push updated data
         run: |
           git config user.name 'govbot'
           git config user.email 'govbot@github.com'
-          git add site/data/announcements.json seen_ids.json
-          git diff --cached --quiet || (git commit -m "Update announcements $(date +%Y-%m-%d)" && git push)
+          git add site/data/ seen_ids/
+          git diff --cached --quiet || (git commit -m "Update data $(date +%Y-%m-%d)" && git push)
