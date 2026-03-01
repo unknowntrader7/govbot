@@ -225,6 +225,36 @@ def filter_new(parsed_items, seen_ids):
     return new_items
 
 
+def filter_by_region(items, regions):
+    """지역 필터: 중앙부처 사업은 통과, 지자체 사업은 설정된 지역만 통과."""
+    if not regions:
+        return items
+
+    # 중앙부처 키워드 — 이 키워드가 소관기관에 포함되면 전국 사업으로 간주
+    central_keywords = [
+        "부", "처", "청", "원", "위원회", "진흥원", "재단",
+        "과학기술", "중소벤처", "산업통상", "문화체육", "고용노동",
+        "행정안전", "보건복지", "환경", "국토교통", "교육", "농림",
+    ]
+
+    filtered = []
+    for item in items:
+        org = item.get("organization", "")
+        # 중앙부처 사업은 무조건 포함
+        if any(kw in org for kw in central_keywords):
+            filtered.append(item)
+            continue
+        # 지자체 사업은 설정된 지역만 포함
+        if any(region in org for region in regions):
+            filtered.append(item)
+            continue
+
+    removed = len(items) - len(filtered)
+    if removed > 0:
+        print(f"[지역필터] {removed}건 제외 (설정 지역: {', '.join(regions)})")
+    return filtered
+
+
 def deduplicate(announcements):
     """사업명 + 소관기관 조합으로 중복 공고를 제거한다. 기업마당 우선."""
     seen = {}
@@ -279,44 +309,50 @@ def main():
         print("[오류] API 키가 하나도 설정되지 않았습니다.")
         sys.exit(1)
 
-    # 1. 기존 데이터 로드
+    # 1. 설정 로드
+    config = load_json(CONFIG_PATH, {})
+    regions = config.get("regions", [])
+
+    # 2. 기존 데이터 로드
     announcements = load_json(ANNOUNCEMENTS_PATH, [])
     seen_ids = set(load_json(SEEN_IDS_PATH, []))
     print(f"[시작] 기존 공고 {len(announcements)}건, 수집 이력 {len(seen_ids)}건")
 
     new_count = 0
 
-    # 2. 기업마당 수집
+    # 3. 기업마당 수집
     if bizinfo_key:
         raw_bizinfo = fetch_bizinfo(bizinfo_key)
         parsed_bizinfo = [parse_bizinfo(item) for item in raw_bizinfo]
+        parsed_bizinfo = filter_by_region(parsed_bizinfo, regions)
         new_bizinfo = filter_new(parsed_bizinfo, seen_ids)
         announcements.extend(new_bizinfo)
         new_count += len(new_bizinfo)
         print(f"[기업마당] 신규 {len(new_bizinfo)}건 추가")
 
-    # 3. 보조금24 수집
+    # 4. 보조금24 수집
     if gov24_key:
         raw_gov24 = fetch_gov24(gov24_key)
         parsed_gov24 = [parse_gov24(item) for item in raw_gov24]
+        parsed_gov24 = filter_by_region(parsed_gov24, regions)
         new_gov24 = filter_new(parsed_gov24, seen_ids)
         announcements.extend(new_gov24)
         new_count += len(new_gov24)
         print(f"[보조금24] 신규 {len(new_gov24)}건 추가")
 
-    # 4. 중복 제거 (사업명 + 소관기관 기준)
+    # 6. 중복 제거 (사업명 + 소관기관 기준)
     announcements = deduplicate(announcements)
 
-    # 5. 마감 공고 삭제
+    # 7. 마감 공고 삭제
     announcements = cleanup_expired(announcements)
 
-    # 6. D-day 재계산
+    # 8. D-day 재계산
     announcements = recalculate_ddays(announcements)
 
-    # 7. 마감일순 정렬 (D-day 오름차순)
+    # 9. 마감일순 정렬 (D-day 오름차순)
     announcements.sort(key=lambda x: x.get("dDay", 999))
 
-    # 8. 저장
+    # 10. 저장
     save_json(ANNOUNCEMENTS_PATH, announcements)
     save_json(SEEN_IDS_PATH, list(seen_ids))
 
