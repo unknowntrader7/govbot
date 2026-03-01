@@ -27,6 +27,7 @@ SEEN_IDS_PATH = os.path.join(SEEN_IDS_DIR, "support.json")
 # ──────────────────────────────────────
 
 BIZINFO_API_URL = "https://www.bizinfo.go.kr/uss/rss/bizinfoApi.do"
+BIZINFO_DETAIL_URL = "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId={}"
 GOV24_API_URL = "https://api.odcloud.kr/api/gov24/v3/serviceList"
 
 # ──────────────────────────────────────
@@ -53,8 +54,12 @@ def fetch_bizinfo(api_key):
 def parse_bizinfo(item):
     """기업마당 API 응답을 내부 스키마로 변환한다."""
     end_date = item.get("reqstEndDe", "")
+    pblanc_id = item.get("pblancId", "")
+    detail_url = item.get("detailUrl", "")
+    if not detail_url and pblanc_id:
+        detail_url = BIZINFO_DETAIL_URL.format(pblanc_id)
     return {
-        "id": item.get("pblancId", ""),
+        "id": pblanc_id,
         "title": item.get("pblancNm", ""),
         "category": item.get("hashtags", "기타"),
         "organization": item.get("jrsdInsttNm", ""),
@@ -62,7 +67,7 @@ def parse_bizinfo(item):
         "startDate": item.get("reqstBeginDe", ""),
         "endDate": end_date,
         "registDate": item.get("creatPnttm", ""),
-        "detailUrl": item.get("detailUrl", ""),
+        "detailUrl": detail_url,
         "dDay": calculate_dday(end_date),
         "summary": None,
         "source": "bizinfo",

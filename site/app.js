@@ -26,6 +26,47 @@ let currentSearch = "";
 let currentSort = "dday";
 
 // ──────────────────────────────────────
+// 카테고리 태그 파싱 (bizinfo hashtags 정리)
+// ──────────────────────────────────────
+
+const NOISE_TAGS = new Set([
+  "서울", "부산", "대구", "인천", "광주", "대전", "울산", "세종",
+  "경기", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주",
+  "전국", "해외",
+]);
+
+// 기관명 접미 패턴 (4글자 이상일 때만 적용)
+const ORG_SUFFIXES = ["진흥원", "진흥공단", "진흥재단", "진흥공사", "관광부", "통상부", "자원부", "통신부", "안전부", "고용부", "복지부", "환경부", "행정부", "기획부", "산업진흥원", "협력단", "연구원", "공사", "공단", "재단"];
+
+function isOrgTag(tag) {
+  if (tag.length < 4) return false;
+  return ORG_SUFFIXES.some((s) => tag.endsWith(s));
+}
+
+function parseCategoryTags(category) {
+  if (!category) return [];
+  const tags = category.split(",").map((t) => t.trim()).filter(Boolean);
+  // 태그가 1~2개이면 gov24 같은 깨끗한 카테고리 → 그대로 반환
+  if (tags.length <= 2) return tags;
+  // bizinfo 해시태그: 노이즈 제거
+  return tags.filter((t) => {
+    if (NOISE_TAGS.has(t)) return false;
+    if (/^\d{4}$/.test(t)) return false; // 연도
+    if (isOrgTag(t)) return false; // 기관명
+    return true;
+  });
+}
+
+const BIZINFO_DETAIL_BASE =
+  "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=";
+
+function resolveDetailUrl(a) {
+  if (a.detailUrl) return a.detailUrl;
+  if (a.id && a.id.startsWith("PBLN_")) return BIZINFO_DETAIL_BASE + a.id;
+  return "";
+}
+
+// ──────────────────────────────────────
 // 설정 (localStorage)
 // ──────────────────────────────────────
 
@@ -222,16 +263,31 @@ function setupChannelTabs() {
 
 function buildCategoryFilters() {
   const container = document.getElementById("filters");
-  // 데이터에서 카테고리 자동 추출
-  const categories = new Set();
+  // 태그별 빈도수 집계
+  const tagCount = {};
   allAnnouncements.forEach((a) => {
-    if (a.category) categories.add(a.category);
+    const tags = parseCategoryTags(a.category);
+    const seen = new Set();
+    tags.forEach((tag) => {
+      if (!seen.has(tag)) {
+        seen.add(tag);
+        tagCount[tag] = (tagCount[tag] || 0) + 1;
+      }
+    });
   });
-  const sorted = [...categories].sort();
 
-  let html = '<button class="filter-btn active" data-category="전체">전체</button>';
-  sorted.forEach((cat) => {
-    html += `<button class="filter-btn" data-category="${escapeHtml(cat)}">${escapeHtml(cat)}</button>`;
+  // 빈도순 정렬 → 상위 12개 표시
+  const topTags = Object.entries(tagCount)
+    .filter(([, count]) => count >= 2) // 최소 2건 이상
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 12)
+    .map(([tag]) => tag);
+
+  let html =
+    '<button class="filter-btn active" data-category="전체">전체</button>';
+  topTags.forEach((tag) => {
+    const count = tagCount[tag];
+    html += `<button class="filter-btn" data-category="${escapeHtml(tag)}">${escapeHtml(tag)} <span class="filter-count">${count}</span></button>`;
   });
   container.innerHTML = html;
 }
@@ -262,10 +318,11 @@ async function loadData() {
 
 function setupFilters() {
   document.getElementById("filters").addEventListener("click", (e) => {
-    if (!e.target.classList.contains("filter-btn")) return;
-    document.querySelectorAll(".filter-btn").forEach((btn) => btn.classList.remove("active"));
-    e.target.classList.add("active");
-    currentCategory = e.target.dataset.category;
+    const btn = e.target.closest(".filter-btn");
+    if (!btn) return;
+    document.querySelectorAll(".filter-btn").forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    currentCategory = btn.dataset.category;
     render();
   });
 }
@@ -405,7 +462,11 @@ function getFiltered() {
   let list = [...allAnnouncements];
 
   if (currentCategory !== "전체") {
-    list = list.filter((a) => a.category === currentCategory);
+    list = list.filter((a) => {
+      if (!a.category) return false;
+      const tags = parseCategoryTags(a.category);
+      return tags.includes(currentCategory);
+    });
   }
 
   if (currentSearch) {
@@ -475,6 +536,12 @@ function formatBudget(budget) {
   return num.toLocaleString() + "원";
 }
 
+function getDisplayTags(a) {
+  const tags = parseCategoryTags(a.category);
+  if (tags.length === 0) return [a.category || "기타"];
+  return tags.slice(0, 3);
+}
+
 function createCard(a) {
   const ddayInfo = getDdayInfo(a.dDay);
   const urgencyClass = a.dDay <= 3 ? "urgent" : a.dDay <= 7 ? "warning" : "";
@@ -485,22 +552,50 @@ function createCard(a) {
   const btnTitle = hasKey ? "AI로 공고 요약" : "설정에서 API 키를 입력하세요";
   const sourceLabel = getSourceLabel(a.source);
   const budgetStr = formatBudget(a.budget);
+  const detailUrl = resolveDetailUrl(a);
+  const displayTags = getDisplayTags(a);
+  const tagsHtml = displayTags
+    .map((t) => `<span class="card-tag">${escapeHtml(t)}</span>`)
+    .join("");
+  const executorHtml = a.executor
+    ? `<span class="card-executor">${escapeHtml(a.executor)}</span>`
+    : "";
+
+  // 마감일 / 등록일 표시
+  let dateHtml = "";
+  if (a.endDate) {
+    dateHtml = `<span class="card-date">~${formatDate(a.endDate)}</span>`;
+  } else if (a.registDate) {
+    dateHtml = `<span class="card-date">등록 ${formatDate(a.registDate)}</span>`;
+  }
+
+  // 요약 정보 표시 (gov24의 summary 필드)
+  const summaryHtml = a.summary
+    ? `<p class="card-summary">${escapeHtml(a.summary)}</p>`
+    : "";
+
+  // 상세보기 버튼 (URL이 있을 때만)
+  const detailBtnHtml = detailUrl
+    ? `<a class="btn btn-detail" href="${escapeHtml(detailUrl)}" target="_blank" rel="noopener">상세보기 ↗</a>`
+    : "";
 
   return `
     <div class="card ${urgencyClass} ${highlightClass}">
       <div class="card-header">
         <span class="dday-badge ${ddayInfo.color}">${ddayInfo.text}</span>
-        <span class="card-title">${escapeHtml(a.title)}</span>
+        <span class="card-title">${detailUrl ? `<a href="${escapeHtml(detailUrl)}" target="_blank" rel="noopener">${escapeHtml(a.title)}</a>` : escapeHtml(a.title)}</span>
       </div>
+      ${summaryHtml}
       <div class="card-meta">
-        <span><span class="card-category">${escapeHtml(a.category)}</span></span>
+        <div class="card-tags">${tagsHtml}</div>
         ${sourceLabel ? `<span class="card-source">${sourceLabel}</span>` : ""}
-        <span>${escapeHtml(a.organization)}</span>
+        <span class="card-org">${escapeHtml(a.organization)}</span>
+        ${executorHtml}
         ${budgetStr ? `<span class="card-budget">${budgetStr}</span>` : ""}
-        <span>~${formatDate(a.endDate)}</span>
+        ${dateHtml}
       </div>
       <div class="card-actions">
-        <a class="btn btn-detail" href="${escapeHtml(a.detailUrl)}" target="_blank" rel="noopener">상세보기</a>
+        ${detailBtnHtml}
         <button class="btn btn-summary ${btnClass}" data-id="${escapeHtml(a.id)}" title="${btnTitle}">AI 요약</button>
       </div>
     </div>
@@ -557,6 +652,7 @@ async function handleSummaryClick(e) {
 // ──────────────────────────────────────
 
 function getDdayInfo(dDay) {
+  if (dDay >= 999) return { text: "상시", color: "gray" };
   if (dDay <= 0) return { text: "마감", color: "red" };
   if (dDay <= 3) return { text: `D-${dDay}`, color: "red" };
   if (dDay <= 7) return { text: `D-${dDay}`, color: "yellow" };
@@ -564,9 +660,13 @@ function getDdayInfo(dDay) {
 }
 
 function formatDate(dateStr) {
-  if (!dateStr) return "미정";
-  const parts = dateStr.split("-");
-  if (parts.length >= 3) return `${parts[1]}.${parts[2]}`;
+  if (!dateStr) return "";
+  // "2026-02-27 14:23:18" → "02.27"
+  const match = dateStr.match(/(\d{4})-(\d{2})-(\d{2})/);
+  if (match) return `${match[2]}.${match[3]}`;
+  // "20201217142613" → "12.17"
+  const match2 = dateStr.match(/^(\d{4})(\d{2})(\d{2})/);
+  if (match2) return `${match2[2]}.${match2[3]}`;
   return dateStr;
 }
 
