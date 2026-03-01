@@ -22,8 +22,9 @@ function loadAISettings() {
   } catch (e) {}
   return {
     activeProvider: "gemini",
-    gemini: { key: "", model: "gemini-2.0-flash" },
-    openai: { key: "", model: "gpt-4o-mini" },
+    gemini: { key: "", model: "gemini-2.5-flash" },
+    openai: { key: "", model: "gpt-5-mini" },
+    claude: { key: "", model: "claude-haiku-4-5-20241022" },
   };
 }
 
@@ -108,6 +109,32 @@ async function callOpenAI(apiKey, model, prompt) {
   return data.choices?.[0]?.message?.content || "요약 결과 없음";
 }
 
+async function callClaude(apiKey, model, prompt) {
+  const res = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "x-api-key": apiKey,
+      "anthropic-version": "2023-06-01",
+      "anthropic-dangerous-direct-browser-access": "true",
+    },
+    body: JSON.stringify({
+      model: model,
+      max_tokens: 500,
+      messages: [{ role: "user", content: prompt }],
+      temperature: 0.3,
+    }),
+  });
+
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.error?.message || `Claude API 오류 (${res.status})`);
+  }
+
+  const data = await res.json();
+  return data.content?.[0]?.text || "요약 결과 없음";
+}
+
 async function requestSummary(announcement) {
   const ai = getActiveAI();
   if (!ai.key) {
@@ -118,8 +145,10 @@ async function requestSummary(announcement) {
 
   if (ai.provider === "gemini") {
     return await callGemini(ai.key, ai.model, prompt);
-  } else {
+  } else if (ai.provider === "openai") {
     return await callOpenAI(ai.key, ai.model, prompt);
+  } else {
+    return await callClaude(ai.key, ai.model, prompt);
   }
 }
 
@@ -235,6 +264,10 @@ function setupSettingsModal() {
         key: document.getElementById("openai-key").value.trim(),
         model: document.getElementById("openai-model").value,
       },
+      claude: {
+        key: document.getElementById("claude-key").value.trim(),
+        model: document.getElementById("claude-model").value,
+      },
     };
     saveAISettings(settings);
     modal.classList.remove("open");
@@ -249,6 +282,8 @@ function populateSettings() {
   document.getElementById("gemini-model").value = s.gemini.model;
   document.getElementById("openai-key").value = s.openai.key;
   document.getElementById("openai-model").value = s.openai.model;
+  document.getElementById("claude-key").value = s.claude?.key || "";
+  document.getElementById("claude-model").value = s.claude?.model || "claude-haiku-4-5-20241022";
   document.querySelector(`input[name="active-provider"][value="${s.activeProvider}"]`).checked = true;
 }
 
@@ -362,7 +397,8 @@ async function handleSummaryClick(e) {
   try {
     const summary = await requestSummary(announcement);
 
-    const providerLabel = ai.provider === "gemini" ? "Gemini" : "ChatGPT";
+    const providerLabels = { gemini: "Gemini", openai: "ChatGPT", claude: "Claude" };
+    const providerLabel = providerLabels[ai.provider] || ai.provider;
     const summaryHtml = `
       <div class="summary-box">
         <div class="summary-header">
