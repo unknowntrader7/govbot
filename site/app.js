@@ -10,33 +10,60 @@ let currentSearch = "";
 let currentSort = "dday";
 
 // ──────────────────────────────────────
-// AI 설정 (localStorage 기반)
+// 설정 (localStorage)
 // ──────────────────────────────────────
 
-const AI_SETTINGS_KEY = "govbot_ai_settings";
+const SETTINGS_KEY = "govbot_settings";
 
-function loadAISettings() {
+function loadSettings() {
   try {
-    const raw = localStorage.getItem(AI_SETTINGS_KEY);
+    const raw = localStorage.getItem(SETTINGS_KEY);
     if (raw) return JSON.parse(raw);
   } catch (e) {}
   return {
     activeProvider: "gemini",
+    interestKeywords: [],
     gemini: { key: "", model: "gemini-2.5-flash" },
     openai: { key: "", model: "gpt-5-mini" },
     claude: { key: "", model: "claude-haiku-4-5-20241022" },
   };
 }
 
-function saveAISettings(settings) {
-  localStorage.setItem(AI_SETTINGS_KEY, JSON.stringify(settings));
+function saveSettings(settings) {
+  localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
 }
 
 function getActiveAI() {
-  const s = loadAISettings();
+  const s = loadSettings();
   const provider = s.activeProvider;
   const config = s[provider];
-  return { provider, key: config.key, model: config.model };
+  return { provider, key: config?.key || "", model: config?.model || "" };
+}
+
+function getInterestKeywords() {
+  return loadSettings().interestKeywords || [];
+}
+
+// ──────────────────────────────────────
+// 다크모드
+// ──────────────────────────────────────
+
+function initDarkMode() {
+  const saved = localStorage.getItem("govbot_dark");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const isDark = saved === "true" || (saved === null && prefersDark);
+  applyDarkMode(isDark);
+
+  document.getElementById("toggle-dark").addEventListener("click", () => {
+    const current = document.documentElement.getAttribute("data-theme") === "dark";
+    applyDarkMode(!current);
+    localStorage.setItem("govbot_dark", !current);
+  });
+}
+
+function applyDarkMode(isDark) {
+  document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
+  document.getElementById("toggle-dark").textContent = isDark ? "☀️" : "🌙";
 }
 
 // ──────────────────────────────────────
@@ -75,12 +102,10 @@ async function callGemini(apiKey, model, prompt) {
       generationConfig: { maxOutputTokens: 500, temperature: 0.3 },
     }),
   });
-
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
     throw new Error(err.error?.message || `Gemini API 오류 (${res.status})`);
   }
-
   const data = await res.json();
   return data.candidates?.[0]?.content?.parts?.[0]?.text || "요약 결과 없음";
 }
@@ -93,18 +118,16 @@ async function callOpenAI(apiKey, model, prompt) {
       Authorization: `Bearer ${apiKey}`,
     },
     body: JSON.stringify({
-      model: model,
+      model,
       messages: [{ role: "user", content: prompt }],
       max_tokens: 500,
       temperature: 0.3,
     }),
   });
-
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
     throw new Error(err.error?.message || `OpenAI API 오류 (${res.status})`);
   }
-
   const data = await res.json();
   return data.choices?.[0]?.message?.content || "요약 결과 없음";
 }
@@ -119,18 +142,16 @@ async function callClaude(apiKey, model, prompt) {
       "anthropic-dangerous-direct-browser-access": "true",
     },
     body: JSON.stringify({
-      model: model,
+      model,
       max_tokens: 500,
       messages: [{ role: "user", content: prompt }],
       temperature: 0.3,
     }),
   });
-
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
     throw new Error(err.error?.message || `Claude API 오류 (${res.status})`);
   }
-
   const data = await res.json();
   return data.content?.[0]?.text || "요약 결과 없음";
 }
@@ -140,16 +161,10 @@ async function requestSummary(announcement) {
   if (!ai.key) {
     throw new Error("API 키가 설정되지 않았습니다. ⚙️ 설정에서 키를 입력해주세요.");
   }
-
   const prompt = buildSummaryPrompt(announcement);
-
-  if (ai.provider === "gemini") {
-    return await callGemini(ai.key, ai.model, prompt);
-  } else if (ai.provider === "openai") {
-    return await callOpenAI(ai.key, ai.model, prompt);
-  } else {
-    return await callClaude(ai.key, ai.model, prompt);
-  }
+  if (ai.provider === "gemini") return await callGemini(ai.key, ai.model, prompt);
+  if (ai.provider === "openai") return await callOpenAI(ai.key, ai.model, prompt);
+  return await callClaude(ai.key, ai.model, prompt);
 }
 
 // ──────────────────────────────────────
@@ -157,6 +172,7 @@ async function requestSummary(announcement) {
 // ──────────────────────────────────────
 
 document.addEventListener("DOMContentLoaded", () => {
+  initDarkMode();
   loadData();
   setupFilters();
   setupSearch();
@@ -180,10 +196,8 @@ async function loadData() {
 function setupFilters() {
   document.getElementById("filters").addEventListener("click", (e) => {
     if (!e.target.classList.contains("filter-btn")) return;
-
     document.querySelectorAll(".filter-btn").forEach((btn) => btn.classList.remove("active"));
     e.target.classList.add("active");
-
     currentCategory = e.target.dataset.category;
     render();
   });
@@ -211,6 +225,8 @@ function setupSort() {
 // 설정 모달
 // ──────────────────────────────────────
 
+let activeSettingsTab = "gemini";
+
 function setupSettingsModal() {
   const modal = document.getElementById("settings-modal");
   const openBtn = document.getElementById("open-settings");
@@ -223,7 +239,6 @@ function setupSettingsModal() {
   });
 
   closeBtn.addEventListener("click", () => modal.classList.remove("open"));
-
   modal.addEventListener("click", (e) => {
     if (e.target === modal) modal.classList.remove("open");
   });
@@ -235,6 +250,7 @@ function setupSettingsModal() {
       document.querySelectorAll(".provider-panel").forEach((p) => p.classList.remove("active"));
       tab.classList.add("active");
       document.getElementById(`panel-${tab.dataset.provider}`).classList.add("active");
+      activeSettingsTab = tab.dataset.provider;
     });
   });
 
@@ -254,8 +270,15 @@ function setupSettingsModal() {
 
   // Save
   saveBtn.addEventListener("click", () => {
+    const kwRaw = document.getElementById("interest-keywords").value;
+    const keywords = kwRaw
+      .split(",")
+      .map((k) => k.trim())
+      .filter((k) => k.length > 0);
+
     const settings = {
-      activeProvider: document.querySelector('input[name="active-provider"]:checked').value,
+      activeProvider: activeSettingsTab,
+      interestKeywords: keywords,
       gemini: {
         key: document.getElementById("gemini-key").value.trim(),
         model: document.getElementById("gemini-model").value,
@@ -269,22 +292,42 @@ function setupSettingsModal() {
         model: document.getElementById("claude-model").value,
       },
     };
-    saveAISettings(settings);
+    saveSettings(settings);
     modal.classList.remove("open");
-    showToast("AI 설정이 저장되었습니다.");
-    render(); // 버튼 상태 업데이트
+    showToast("설정이 저장되었습니다.");
+    render();
   });
 }
 
 function populateSettings() {
-  const s = loadAISettings();
-  document.getElementById("gemini-key").value = s.gemini.key;
-  document.getElementById("gemini-model").value = s.gemini.model;
-  document.getElementById("openai-key").value = s.openai.key;
-  document.getElementById("openai-model").value = s.openai.model;
+  const s = loadSettings();
+  document.getElementById("interest-keywords").value = (s.interestKeywords || []).join(", ");
+  document.getElementById("gemini-key").value = s.gemini?.key || "";
+  document.getElementById("gemini-model").value = s.gemini?.model || "gemini-2.5-flash";
+  document.getElementById("openai-key").value = s.openai?.key || "";
+  document.getElementById("openai-model").value = s.openai?.model || "gpt-5-mini";
   document.getElementById("claude-key").value = s.claude?.key || "";
   document.getElementById("claude-model").value = s.claude?.model || "claude-haiku-4-5-20241022";
-  document.querySelector(`input[name="active-provider"][value="${s.activeProvider}"]`).checked = true;
+
+  // 활성 탭 복원
+  activeSettingsTab = s.activeProvider || "gemini";
+  document.querySelectorAll(".provider-tab").forEach((t) => {
+    t.classList.toggle("active", t.dataset.provider === activeSettingsTab);
+  });
+  document.querySelectorAll(".provider-panel").forEach((p) => {
+    p.classList.toggle("active", p.id === `panel-${activeSettingsTab}`);
+  });
+}
+
+// ──────────────────────────────────────
+// 관심 키워드 매칭
+// ──────────────────────────────────────
+
+function isInterestMatch(announcement) {
+  const keywords = getInterestKeywords();
+  if (keywords.length === 0) return false;
+  const text = `${announcement.title} ${announcement.organization} ${announcement.category} ${announcement.executor || ""}`.toLowerCase();
+  return keywords.some((kw) => text.includes(kw.toLowerCase()));
 }
 
 // ──────────────────────────────────────
@@ -294,12 +337,10 @@ function populateSettings() {
 function getFiltered() {
   let list = [...allAnnouncements];
 
-  // 카테고리 필터
   if (currentCategory !== "전체") {
     list = list.filter((a) => a.category === currentCategory);
   }
 
-  // 키워드 검색
   if (currentSearch) {
     list = list.filter(
       (a) =>
@@ -309,7 +350,6 @@ function getFiltered() {
     );
   }
 
-  // 정렬
   if (currentSort === "dday") {
     list.sort((a, b) => a.dDay - b.dDay);
   } else if (currentSort === "regist") {
@@ -321,40 +361,58 @@ function getFiltered() {
 
 function render() {
   const list = getFiltered();
-  const container = document.getElementById("card-list");
   const stats = document.getElementById("stats");
 
   stats.textContent = `총 ${allAnnouncements.length}건 중 ${list.length}건 표시`;
 
-  if (list.length === 0) {
-    container.innerHTML = '<div class="empty">표시할 공고가 없습니다.</div>';
-    return;
+  // 긴급 섹션 (D-3 이하)
+  const urgent = list.filter((a) => a.dDay > 0 && a.dDay <= 3);
+  const normal = list.filter((a) => !(a.dDay > 0 && a.dDay <= 3));
+
+  const urgentSection = document.getElementById("urgent-section");
+  const urgentList = document.getElementById("urgent-list");
+  const normalList = document.getElementById("card-list");
+
+  if (urgent.length > 0) {
+    urgentSection.style.display = "block";
+    urgentList.innerHTML = urgent.map((a) => createCard(a)).join("");
+    urgentList.querySelectorAll(".btn-summary").forEach((btn) => {
+      btn.addEventListener("click", handleSummaryClick);
+    });
+  } else {
+    urgentSection.style.display = "none";
+    urgentList.innerHTML = "";
   }
 
-  container.innerHTML = list.map((a, idx) => createCard(a, idx)).join("");
-
-  // AI 요약 버튼 이벤트 바인딩
-  container.querySelectorAll(".btn-summary").forEach((btn) => {
-    btn.addEventListener("click", handleSummaryClick);
-  });
+  if (normal.length === 0 && urgent.length === 0) {
+    normalList.innerHTML = '<div class="empty">표시할 공고가 없습니다.</div>';
+  } else {
+    normalList.innerHTML = normal.map((a) => createCard(a)).join("");
+    normalList.querySelectorAll(".btn-summary").forEach((btn) => {
+      btn.addEventListener("click", handleSummaryClick);
+    });
+  }
 }
 
-function createCard(a, idx) {
+function createCard(a) {
   const ddayInfo = getDdayInfo(a.dDay);
   const urgencyClass = a.dDay <= 3 ? "urgent" : a.dDay <= 7 ? "warning" : "";
+  const highlightClass = isInterestMatch(a) ? "highlight" : "";
   const ai = getActiveAI();
   const hasKey = !!ai.key;
   const btnClass = hasKey ? "" : "no-key";
-  const btnTitle = hasKey ? "AI로 공고 요약" : "⚙️ 설정에서 API 키를 입력하세요";
+  const btnTitle = hasKey ? "AI로 공고 요약" : "설정에서 API 키를 입력하세요";
+  const sourceLabel = a.source === "bizinfo" ? "기업마당" : a.source === "gov24" ? "보조금24" : "";
 
   return `
-    <div class="card ${urgencyClass}" data-idx="${idx}">
+    <div class="card ${urgencyClass} ${highlightClass}">
       <div class="card-header">
         <span class="dday-badge ${ddayInfo.color}">${ddayInfo.text}</span>
         <span class="card-title">${escapeHtml(a.title)}</span>
       </div>
       <div class="card-meta">
         <span><span class="card-category">${escapeHtml(a.category)}</span></span>
+        ${sourceLabel ? `<span class="card-source">${sourceLabel}</span>` : ""}
         <span>${escapeHtml(a.organization)}</span>
         <span>~${formatDate(a.endDate)}</span>
       </div>
@@ -371,14 +429,9 @@ async function handleSummaryClick(e) {
   const card = btn.closest(".card");
   const id = btn.dataset.id;
 
-  // 이미 요약이 있으면 토글
   const existing = card.querySelector(".summary-box");
-  if (existing) {
-    existing.remove();
-    return;
-  }
+  if (existing) { existing.remove(); return; }
 
-  // API 키 확인
   const ai = getActiveAI();
   if (!ai.key) {
     document.getElementById("settings-modal").classList.add("open");
@@ -386,32 +439,26 @@ async function handleSummaryClick(e) {
     return;
   }
 
-  // 해당 공고 찾기
   const announcement = allAnnouncements.find((a) => a.id === id);
   if (!announcement) return;
 
-  // 로딩 상태
   btn.classList.add("loading");
   btn.textContent = "요약 중...";
 
   try {
     const summary = await requestSummary(announcement);
-
-    const providerLabels = { gemini: "Gemini", openai: "ChatGPT", claude: "Claude" };
-    const providerLabel = providerLabels[ai.provider] || ai.provider;
+    const labels = { gemini: "Gemini", openai: "ChatGPT", claude: "Claude" };
     const summaryHtml = `
       <div class="summary-box">
         <div class="summary-header">
-          <span>${providerLabel} · ${ai.model}</span>
+          <span>${labels[ai.provider] || ai.provider} · ${ai.model}</span>
         </div>
         <div class="summary-content">${escapeHtml(summary)}</div>
       </div>
     `;
     card.insertAdjacentHTML("beforeend", summaryHtml);
   } catch (err) {
-    const errorHtml = `<div class="summary-error">⚠️ ${escapeHtml(err.message)}</div>`;
-    card.insertAdjacentHTML("beforeend", errorHtml);
-    // 5초 후 에러 메시지 제거
+    card.insertAdjacentHTML("beforeend", `<div class="summary-error">${escapeHtml(err.message)}</div>`);
     setTimeout(() => {
       const errEl = card.querySelector(".summary-error");
       if (errEl) errEl.remove();
