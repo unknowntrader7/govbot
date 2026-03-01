@@ -1,9 +1,25 @@
 /**
- * GovBot Fix 보드 — 프론트엔드 로직
+ * GovBot 문화사업 보드 — 프론트엔드 로직
  */
 
-const DATA_URL = "data/support.json";
+// ──────────────────────────────────────
+// 채널 정의
+// ──────────────────────────────────────
 
+const CHANNELS = {
+  support: {
+    url: "data/support.json",
+    label: "지원사업",
+    sourceLabels: { bizinfo: "기업마당", gov24: "보조금24" },
+  },
+  bids: {
+    url: "data/bids.json",
+    label: "입찰·조달",
+    sourceLabels: { g2b: "나라장터" },
+  },
+};
+
+let currentChannel = "support";
 let allAnnouncements = [];
 let currentCategory = "전체";
 let currentSearch = "";
@@ -78,8 +94,10 @@ function buildSummaryPrompt(announcement) {
   if (announcement.startDate) info += `접수 시작: ${announcement.startDate}\n`;
   if (announcement.endDate) info += `접수 마감: ${announcement.endDate}\n`;
   if (announcement.summary) info += `요약: ${announcement.summary}\n`;
+  if (announcement.budget) info += `예산: ${Number(announcement.budget).toLocaleString()}원\n`;
 
-  return `다음 정부 지원사업 공고를 분석하여 간결하게 요약해줘.
+  const typeLabel = currentChannel === "bids" ? "입찰공고" : "정부 지원사업 공고";
+  return `다음 ${typeLabel}를 분석하여 간결하게 요약해줘.
 
 ${info}
 
@@ -173,23 +191,72 @@ async function requestSummary(announcement) {
 
 document.addEventListener("DOMContentLoaded", () => {
   initDarkMode();
-  loadData();
+  setupChannelTabs();
   setupFilters();
   setupSearch();
   setupSort();
   setupSettingsModal();
+  loadData();
 });
 
+// ──────────────────────────────────────
+// 채널 탭
+// ──────────────────────────────────────
+
+function setupChannelTabs() {
+  document.getElementById("channel-tabs").addEventListener("click", (e) => {
+    if (!e.target.classList.contains("channel-tab")) return;
+    const channel = e.target.dataset.channel;
+    if (channel === currentChannel) return;
+
+    document.querySelectorAll(".channel-tab").forEach((t) => t.classList.remove("active"));
+    e.target.classList.add("active");
+    currentChannel = channel;
+    currentCategory = "전체";
+    currentSearch = "";
+    document.getElementById("search").value = "";
+    buildCategoryFilters();
+    loadData();
+  });
+}
+
+function buildCategoryFilters() {
+  const container = document.getElementById("filters");
+  // 데이터에서 카테고리 자동 추출
+  const categories = new Set();
+  allAnnouncements.forEach((a) => {
+    if (a.category) categories.add(a.category);
+  });
+  const sorted = [...categories].sort();
+
+  let html = '<button class="filter-btn active" data-category="전체">전체</button>';
+  sorted.forEach((cat) => {
+    html += `<button class="filter-btn" data-category="${escapeHtml(cat)}">${escapeHtml(cat)}</button>`;
+  });
+  container.innerHTML = html;
+}
+
+// ──────────────────────────────────────
+// 데이터 로드
+// ──────────────────────────────────────
+
 async function loadData() {
+  const channel = CHANNELS[currentChannel];
+  const cardList = document.getElementById("card-list");
+  cardList.innerHTML = '<div class="loading">공고를 불러오는 중...</div>';
+
   try {
-    const response = await fetch(DATA_URL);
+    const response = await fetch(channel.url);
     if (!response.ok) throw new Error("데이터를 불러올 수 없습니다.");
     allAnnouncements = await response.json();
+    buildCategoryFilters();
     render();
     updateLastUpdated();
   } catch (err) {
-    document.getElementById("card-list").innerHTML =
-      '<div class="empty">공고 데이터를 불러올 수 없습니다.</div>';
+    allAnnouncements = [];
+    buildCategoryFilters();
+    cardList.innerHTML =
+      `<div class="empty">${channel.label} 데이터를 불러올 수 없습니다.</div>`;
   }
 }
 
@@ -362,8 +429,9 @@ function getFiltered() {
 function render() {
   const list = getFiltered();
   const stats = document.getElementById("stats");
+  const channelLabel = CHANNELS[currentChannel].label;
 
-  stats.textContent = `총 ${allAnnouncements.length}건 중 ${list.length}건 표시`;
+  stats.textContent = `${channelLabel} ${allAnnouncements.length}건 중 ${list.length}건 표시`;
 
   // 긴급 섹션 (D-3 이하)
   const urgent = list.filter((a) => a.dDay > 0 && a.dDay <= 3);
@@ -394,6 +462,19 @@ function render() {
   }
 }
 
+function getSourceLabel(source) {
+  const channel = CHANNELS[currentChannel];
+  return channel.sourceLabels[source] || "";
+}
+
+function formatBudget(budget) {
+  if (!budget || budget <= 0) return "";
+  const num = Number(budget);
+  if (num >= 100000000) return `${(num / 100000000).toFixed(1)}억`;
+  if (num >= 10000) return `${(num / 10000).toFixed(0)}만`;
+  return num.toLocaleString() + "원";
+}
+
 function createCard(a) {
   const ddayInfo = getDdayInfo(a.dDay);
   const urgencyClass = a.dDay <= 3 ? "urgent" : a.dDay <= 7 ? "warning" : "";
@@ -402,7 +483,8 @@ function createCard(a) {
   const hasKey = !!ai.key;
   const btnClass = hasKey ? "" : "no-key";
   const btnTitle = hasKey ? "AI로 공고 요약" : "설정에서 API 키를 입력하세요";
-  const sourceLabel = a.source === "bizinfo" ? "기업마당" : a.source === "gov24" ? "보조금24" : "";
+  const sourceLabel = getSourceLabel(a.source);
+  const budgetStr = formatBudget(a.budget);
 
   return `
     <div class="card ${urgencyClass} ${highlightClass}">
@@ -414,6 +496,7 @@ function createCard(a) {
         <span><span class="card-category">${escapeHtml(a.category)}</span></span>
         ${sourceLabel ? `<span class="card-source">${sourceLabel}</span>` : ""}
         <span>${escapeHtml(a.organization)}</span>
+        ${budgetStr ? `<span class="card-budget">${budgetStr}</span>` : ""}
         <span>~${formatDate(a.endDate)}</span>
       </div>
       <div class="card-actions">

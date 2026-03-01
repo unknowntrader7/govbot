@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GovBot — 정부 지원사업 보드</title>
+  <title>GovBot — 문화사업 보드</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,29 +13,21 @@
         <button class="icon-btn" id="toggle-dark" title="다크모드 전환">🌙</button>
         <div>
           <h1>GovBot</h1>
-          <p class="subtitle">정부 지원사업 Fix 보드</p>
+          <p class="subtitle">문화사업 보드</p>
         </div>
         <button class="icon-btn" id="open-settings" title="설정">⚙️</button>
       </div>
     </header>
 
+    <!-- 채널 탭 -->
+    <div class="channel-tabs" id="channel-tabs">
+      <button class="channel-tab active" data-channel="support">지원사업</button>
+      <button class="channel-tab" data-channel="bids">입찰·조달</button>
+    </div>
+
     <div class="controls">
       <div class="filters" id="filters">
-        <button class="filter-btn active" data-category="전체">전체</button>
-        <button class="filter-btn" data-category="기술">기술</button>
-        <button class="filter-btn" data-category="인력">인력</button>
-        <button class="filter-btn" data-category="내수">내수</button>
-        <button class="filter-btn" data-category="창업">창업</button>
-        <button class="filter-btn" data-category="경영">경영</button>
-        <button class="filter-btn" data-category="생활안정">생활안정</button>
-        <button class="filter-btn" data-category="주거·자립">주거·자립</button>
-        <button class="filter-btn" data-category="보육·교육">보육·교육</button>
-        <button class="filter-btn" data-category="고용·창업">고용·창업</button>
-        <button class="filter-btn" data-category="보건·의료">보건·의료</button>
-        <button class="filter-btn" data-category="행정·안전">행정·안전</button>
-        <button class="filter-btn" data-category="임신·출산">임신·출산</button>
-        <button class="filter-btn" data-category="문화·환경">문화·환경</button>
-        <button class="filter-btn" data-category="기타">기타</button>
+        <!-- 카테고리 버튼은 채널에 따라 동적 생성 -->
       </div>
       <div class="search-sort">
         <input type="text" id="search" placeholder="키워드 검색..." />
