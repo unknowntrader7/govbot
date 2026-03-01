@@ -262,8 +262,9 @@ def recalculate_ddays(announcements):
 # ──────────────────────────────────────
 
 def main():
-    # 공휴일 체크
-    if is_holiday():
+    # 공휴일 체크 (수동 실행 시에는 건너뜀)
+    force_run = os.environ.get("FORCE_RUN", "false").lower() == "true"
+    if is_holiday() and not force_run:
         print("[스킵] 오늘은 공휴일입니다. 수집을 건너뜁니다.")
         return
 

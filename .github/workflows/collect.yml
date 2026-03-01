@@ -26,6 +26,7 @@ jobs:
         env:
           BIZINFO_API_KEY: ${{ secrets.BIZINFO_API_KEY }}
           GOV24_API_KEY: ${{ secrets.GOV24_API_KEY }}
+          FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
         run: python scripts/collect.py
 
       - name: Commit & push updated data
