@@ -22,6 +22,31 @@ CONFIG_PATH = os.path.join(SCRIPT_DIR, "config.json")
 BIZINFO_API_URL = "https://www.bizinfo.go.kr/uss/rss/bizinfoApi.do"
 GOV24_API_URL = "https://api.odcloud.kr/api/gov24/v3/serviceList"
 
+# 대한민국 공휴일 (매년 초에 업데이트 필요)
+HOLIDAYS_2026 = {
+    "2026-01-01",  # 신정
+    "2026-02-16",  # 설날 연휴
+    "2026-02-17",  # 설날
+    "2026-02-18",  # 설날 연휴
+    "2026-03-01",  # 삼일절
+    "2026-05-05",  # 어린이날
+    "2026-05-24",  # 부처님오신날
+    "2026-06-06",  # 현충일
+    "2026-08-15",  # 광복절
+    "2026-10-04",  # 추석 연휴
+    "2026-10-05",  # 추석
+    "2026-10-06",  # 추석 연휴
+    "2026-10-03",  # 개천절
+    "2026-10-09",  # 한글날
+    "2026-12-25",  # 크리스마스
+}
+
+
+def is_holiday():
+    """오늘이 공휴일이면 True를 반환한다."""
+    today = datetime.now().strftime("%Y-%m-%d")
+    return today in HOLIDAYS_2026
+
 
 # ──────────────────────────────────────
 # 공통 유틸리티
@@ -237,6 +262,11 @@ def recalculate_ddays(announcements):
 # ──────────────────────────────────────
 
 def main():
+    # 공휴일 체크
+    if is_holiday():
+        print("[스킵] 오늘은 공휴일입니다. 수집을 건너뜁니다.")
+        return
+
     bizinfo_key = os.environ.get("BIZINFO_API_KEY")
     gov24_key = os.environ.get("GOV24_API_KEY")
 

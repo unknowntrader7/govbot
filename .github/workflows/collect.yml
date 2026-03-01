@@ -2,7 +2,7 @@ name: GovBot Collector
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 매일 UTC 0시 = KST 오전 9시
+    - cron: '0 0 * * 1-5'  # 평일만 UTC 0시 = KST 오전 9시 (월~금)
   workflow_dispatch:       # 수동 실행 가능
 
 permissions:
