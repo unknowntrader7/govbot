@@ -230,24 +230,31 @@ def filter_by_region(items, regions):
     if not regions:
         return items
 
-    # 중앙부처 키워드 — 이 키워드가 소관기관에 포함되면 전국 사업으로 간주
-    central_keywords = [
-        "부", "처", "청", "원", "위원회", "진흥원", "재단",
-        "과학기술", "중소벤처", "산업통상", "문화체육", "고용노동",
-        "행정안전", "보건복지", "환경", "국토교통", "교육", "농림",
+    # 17개 시·도 이름 — 소관기관명에 이 중 하나가 포함되면 지자체 사업으로 판별
+    all_regions = [
+        "서울", "부산", "대구", "인천", "광주", "대전", "울산", "세종",
+        "경기", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주",
     ]
 
     filtered = []
     for item in items:
         org = item.get("organization", "")
-        # 중앙부처 사업은 무조건 포함
-        if any(kw in org for kw in central_keywords):
+        title = item.get("title", "")
+
+        # 소관기관명에서 시·도 이름이 있는지 확인
+        matched_region = None
+        for r in all_regions:
+            if r in org:
+                matched_region = r
+                break
+
+        if matched_region:
+            # 지자체 사업 → 설정된 지역만 통과
+            if matched_region in regions:
+                filtered.append(item)
+        else:
+            # 시·도 이름이 없으면 중앙부처 사업으로 간주 → 무조건 통과
             filtered.append(item)
-            continue
-        # 지자체 사업은 설정된 지역만 포함
-        if any(region in org for region in regions):
-            filtered.append(item)
-            continue
 
     removed = len(items) - len(filtered)
     if removed > 0:
