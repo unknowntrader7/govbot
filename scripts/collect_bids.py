@@ -28,14 +28,14 @@ SEEN_IDS_PATH = os.path.join(SEEN_IDS_DIR, "bids.json")
 # API 엔드포인트
 # ──────────────────────────────────────
 
-G2B_BASE_URL = "http://apis.data.go.kr/1230000/BidPublicInfoService/"
+G2B_BASE_URL = "https://apis.data.go.kr/1230000/ad/BidPublicInfoService/"
 
 # 업무별 입찰공고 목록 엔드포인트
 BID_ENDPOINTS = {
-    "용역": "getBidPblancListInfoServc04",
-    "물품": "getBidPblancListInfoThng04",
-    "공사": "getBidPblancListInfoCnstwk04",
-    "외자": "getBidPblancListInfoFrgcpt04",
+    "용역": "getBidPblancListInfoServc",
+    "물품": "getBidPblancListInfoThng",
+    "공사": "getBidPblancListInfoCnstwk",
+    "외자": "getBidPblancListInfoFrgcpt",
 }
 
 # 나라장터 상세 조회 URL
@@ -95,7 +95,7 @@ def fetch_bids(api_key, bid_type, endpoint):
     begin_dt, end_dt = get_query_date_range(days_back=7)
     all_items = []
     page = 1
-    num_of_rows = 100
+    num_of_rows = 999
 
     while True:
         url = G2B_BASE_URL + endpoint
