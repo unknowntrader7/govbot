@@ -9,7 +9,7 @@
     "endDate": "2026-11-30",
     "registDate": "20201217142613",
     "detailUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/137100000236",
-    "dDay": 229,
+    "dDay": 228,
     "summary": "국내 문화예술·관광·체육 관련 가맹점에서 이용 가능한 문화누리카드 발급 ",
     "source": "gov24"
   },
@@ -7418,5 +7418,33 @@
     "dDay": 999,
     "summary": null,
     "source": "bizinfo"
+  },
+  {
+    "id": "PBLN_000000000120842",
+    "title": "2026년 전북 글로벌게임센터 고도화 게임 제작지원사업 공고",
+    "category": "기술,서울,부산,대구,인천,광주,대전,울산,세종,경기,강원,충북,충남,전북,전남,경북,경남,제주,상용화게임,안정화지원,2026,전북특별자치도콘텐츠융합진흥원,플랫폼전환,전북특별자치도,스토어,QA,게임기업,고도화,플랫폼,콘텐츠,게임",
+    "organization": "전북특별자치도",
+    "executor": "전북특별자치도콘텐츠융합진흥원",
+    "startDate": "",
+    "endDate": "",
+    "registDate": "2026-04-15 15:11:50",
+    "detailUrl": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000120842",
+    "dDay": 999,
+    "summary": null,
+    "source": "bizinfo"
+  },
+  {
+    "id": "gov24_568000000340",
+    "title": "청년타운 나래 스터디룸 대관 지원",
+    "category": "생활안정",
+    "organization": "충청남도 당진시",
+    "executor": null,
+    "startDate": "",
+    "endDate": "",
+    "registDate": "20241212113946",
+    "detailUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/568000000340",
+    "dDay": 999,
+    "summary": "○ 스터디룸 대관을 통한 청년 그룹 스터디 및 소규모 코워킹 공간 지원",
+    "source": "gov24"
   }
 ]
