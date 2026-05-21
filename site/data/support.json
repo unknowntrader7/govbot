@@ -9,7 +9,7 @@
     "endDate": "2026-11-30",
     "registDate": "20201217142613",
     "detailUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/137100000236",
-    "dDay": 194,
+    "dDay": 193,
     "summary": "국내 문화예술·관광·체육 관련 가맹점에서 이용 가능한 문화누리카드 발급 ",
     "source": "gov24"
   },
@@ -8619,6 +8619,34 @@
     "endDate": "",
     "registDate": "2026-05-19 13:19:24",
     "detailUrl": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000122170",
+    "dDay": 999,
+    "summary": null,
+    "source": "bizinfo"
+  },
+  {
+    "id": "PBLN_000000000122257",
+    "title": "2026년 경기 문화기술 콘텐츠 제작지원 기술인프라 이용지원 추가 모집 공고",
+    "category": "기술,내수,경영,서울,부산,대구,인천,광주,대전,울산,세종,경기,강원,충북,충남,전북,전남,경북,경남,제주,2026,경기콘텐츠진흥원,콘텐츠,중소기업,경기도,문화기술콘텐츠,문화기술,사업화,상품화,기술인프라,사업화컨설팅,컨설팅",
+    "organization": "경기도",
+    "executor": "경기콘텐츠진흥원",
+    "startDate": "",
+    "endDate": "",
+    "registDate": "2026-05-20 15:05:57",
+    "detailUrl": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000122257",
+    "dDay": 999,
+    "summary": null,
+    "source": "bizinfo"
+  },
+  {
+    "id": "PBLN_000000000122216",
+    "title": "[경남] 2026년 경력단절예방지원사업 직장문화개선 기업컨설팅 참여기업 모집 공고",
+    "category": "경영,경남,2026,경상남도,경남여성새로일하기센터,직장문화개선,새일센터,솔루션,전담노무사,컨설팅,가족친화경영,일ㆍ생활균형지원제도",
+    "organization": "경상남도",
+    "executor": "경남여성새로일하기센터",
+    "startDate": "",
+    "endDate": "",
+    "registDate": "2026-05-20 10:56:23",
+    "detailUrl": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000122216",
     "dDay": 999,
     "summary": null,
     "source": "bizinfo"
