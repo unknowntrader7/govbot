@@ -9,7 +9,7 @@
     "endDate": "2026-11-30",
     "registDate": "20201217142613",
     "detailUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/137100000236",
-    "dDay": 109,
+    "dDay": 108,
     "summary": "국내 문화예술·관광·체육 관련 가맹점에서 이용 가능한 문화누리카드 발급 ",
     "source": "gov24"
   },
@@ -12175,6 +12175,34 @@
     "endDate": "",
     "registDate": "2026-08-12 09:22:59",
     "detailUrl": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000125353",
+    "dDay": 999,
+    "summary": null,
+    "source": "bizinfo"
+  },
+  {
+    "id": "PBLN_000000000125433",
+    "title": "2026년 홍보영상 제작 및 온라인 게시 지원 참여 희망 소상공인 모집 공고",
+    "category": "내수,서울,부산,대구,인천,전남광주,대전,울산,세종,경기,강원,충북,충남,전북,경북,경남,제주,2026,부산광역시,부산경제진흥원,소상공인,홍보마케팅,온라인홍보마케팅,홍보영상제작,홍보영상,매장영상,제품영상,온라인플랫폼",
+    "organization": "부산광역시",
+    "executor": "부산경제진흥원",
+    "startDate": "",
+    "endDate": "",
+    "registDate": "2026-08-13 13:24:27",
+    "detailUrl": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000125433",
+    "dDay": 999,
+    "summary": null,
+    "source": "bizinfo"
+  },
+  {
+    "id": "PBLN_000000000125409",
+    "title": "2026년 인천 콘텐츠 스케일업 플러스 지원사업 추가모집 공고",
+    "category": "경영,서울,부산,대구,인천,전남광주,대전,울산,세종,경기,강원,충북,충남,전북,경북,경남,제주,2026,투자역량강화,전시참가,비즈매칭,콘텐츠기업,스케일업,인천테크노파크,인천광역시,콘텐츠",
+    "organization": "인천광역시",
+    "executor": "인천테크노파크",
+    "startDate": "",
+    "endDate": "",
+    "registDate": "2026-08-13 09:58:38",
+    "detailUrl": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000125409",
     "dDay": 999,
     "summary": null,
     "source": "bizinfo"
