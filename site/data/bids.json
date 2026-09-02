@@ -1,995 +1,5 @@
 [
   {
-    "id": "g2b_R26BK01640617_000",
-    "title": "인천공항 지능형 영상분석시스템 구축사업",
-    "category": "물품",
-    "organization": "인천국제공항공사",
-    "executor": "인천국제공항공사",
-    "startDate": "2026-07-20",
-    "endDate": "2026-09-01",
-    "registDate": "2026-07-20",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01640617",
-    "dDay": 0,
-    "summary": "일반경쟁",
-    "source": "g2b",
-    "budget": 950473958
-  },
-  {
-    "id": "g2b_R26BK01662958_000",
-    "title": "26년 수중정밀영상탐색기 구매",
-    "category": "외자",
-    "organization": "조달청",
-    "executor": "해군군수사령부",
-    "startDate": "2026-08-03",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-03",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01662958",
-    "dDay": 0,
-    "summary": "일반경쟁",
-    "source": "g2b",
-    "budget": 0
-  },
-  {
-    "id": "g2b_R26BK01668941_000",
-    "title": "2026학년도 서일중학교 국외 역사문화탐방(오사카) 위탁용역",
-    "category": "용역",
-    "organization": "충청남도서산교육청 서일중학교",
-    "executor": "충청남도서산교육청 서일중학교",
-    "startDate": "2026-08-06",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-06",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01668941",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 125989091
-  },
-  {
-    "id": "g2b_R26BK01675791_000",
-    "title": "경주 역사문화 아카이브관리시스템 구축",
-    "category": "용역",
-    "organization": "재단법인 신라문화유산연구원",
-    "executor": "재단법인 신라문화유산연구원",
-    "startDate": "2026-08-11",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-11",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01675791",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 172727273
-  },
-  {
-    "id": "g2b_R26BK01677404_000",
-    "title": "2026년 지역문화예술특성화지원사업 대축제 오케스트라 대중가수 협업 콘서트 운영 용역",
-    "category": "용역",
-    "organization": "경북문화재단",
-    "executor": "경북문화재단",
-    "startDate": "2026-08-11",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-11",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01677404",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 126545455
-  },
-  {
-    "id": "g2b_R26BK01684694_000",
-    "title": "[긴급] 청년창업 페스티벌 통합 운영 용역",
-    "category": "용역",
-    "organization": "호서대학교 산학협력단",
-    "executor": "호서대학교 산학협력단",
-    "startDate": "2026-08-18",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-18",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01684694",
-    "dDay": 0,
-    "summary": "일반경쟁",
-    "source": "g2b",
-    "budget": 76818182
-  },
-  {
-    "id": "g2b_R26BK01684475_000",
-    "title": "2026년 IMO SMART-C Women 프로그램 행사개최 지원 용역(긴급)",
-    "category": "용역",
-    "organization": "조달청 부산지방조달청",
-    "executor": "한국해양수산연수원",
-    "startDate": "2026-08-18",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-18",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01684475",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 123245455
-  },
-  {
-    "id": "g2b_R26BK01684769_000",
-    "title": "콘텐츠산업 수출통계 개발 기초연구 ",
-    "category": "용역",
-    "organization": "문화체육관광부",
-    "executor": "문화체육관광부",
-    "startDate": "2026-08-18",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-18",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01684769",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 71818182
-  },
-  {
-    "id": "g2b_R26BK01684509_000",
-    "title": "2026년도 대전 웹툰작가 홍보물 제작 및 행사 운영 용역",
-    "category": "용역",
-    "organization": "재단법인대전정보문화산업진흥원",
-    "executor": "재단법인대전정보문화산업진흥원",
-    "startDate": "2026-08-18",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-18",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01684509",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 54375562
-  },
-  {
-    "id": "g2b_R26BK01684937_000",
-    "title": "제6회 전주 골목상권 드림축제 운영 대행 용역",
-    "category": "용역",
-    "organization": "전북특별자치도 전주시",
-    "executor": "전북특별자치도 전주시",
-    "startDate": "2026-08-18",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-18",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01684937",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 85454545
-  },
-  {
-    "id": "g2b_R26BK01684532_000",
-    "title": "첨단 분석과학 플랫폼 외부이용자 홈페이지(ARIA) 개편 ",
-    "category": "용역",
-    "organization": "한국기초과학지원연구원",
-    "executor": "한국기초과학지원연구원",
-    "startDate": "2026-08-18",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-18",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01684532",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 42197273
-  },
-  {
-    "id": "g2b_R26BK01685465_000",
-    "title": "공연시장 소비자료 수집 및 활용 대행 용역",
-    "category": "용역",
-    "organization": "조달청 서울지방조달청",
-    "executor": "(재)예술경영지원센터",
-    "startDate": "2026-08-18",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-18",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01685465",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 181818182
-  },
-  {
-    "id": "g2b_R26BK01685918_000",
-    "title": "2026년 스포츠가치센터 청소년동아리축제 운영 용역",
-    "category": "용역",
-    "organization": "서울올림픽기념국민체육진흥공단",
-    "executor": "서울올림픽기념국민체육진흥공단",
-    "startDate": "2026-08-18",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-18",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01685918",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 90909091
-  },
-  {
-    "id": "g2b_R26BK01686836_000",
-    "title": "2026년 사회적약자 지도 제작사업",
-    "category": "용역",
-    "organization": "국토교통부 국토지리정보원",
-    "executor": "국토교통부 국토지리정보원",
-    "startDate": "2026-08-18",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-18",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01686836",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 545454545
-  },
-  {
-    "id": "g2b_R26BK01687439_000",
-    "title": "(계획공모형 지역관광개발사업) 밤하늘 캠핑 페스티벌 및 플리마켓 운영 용역(긴급)",
-    "category": "용역",
-    "organization": "재단법인 영양축제 관광재단",
-    "executor": "재단법인 영양축제 관광재단",
-    "startDate": "2026-08-19",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-19",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01687439",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 177627273
-  },
-  {
-    "id": "g2b_R26BK01685786_000",
-    "title": "울산과학대학교 2026학년도 무룡축제, 체전 무대설치 및 공연 행사 진행 용역",
-    "category": "용역",
-    "organization": "울산과학대학",
-    "executor": "울산과학대학",
-    "startDate": "2026-08-19",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-19",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01685786",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 132727273
-  },
-  {
-    "id": "g2b_R26BK01687658_000",
-    "title": "시장/고객발굴 MARKET TO TECH 프로그램 용역",
-    "category": "용역",
-    "organization": "울산과학기술원",
-    "executor": "울산과학기술원",
-    "startDate": "2026-08-19",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-19",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01687658",
-    "dDay": 0,
-    "summary": "일반경쟁",
-    "source": "g2b",
-    "budget": 286363636
-  },
-  {
-    "id": "g2b_R26BK01688615_000",
-    "title": "2026 서울 어린이 꿈 축제 행사 용역",
-    "category": "용역",
-    "organization": "서울특별시",
-    "executor": "서울특별시",
-    "startDate": "2026-08-19",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-19",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01688615",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 81363636
-  },
-  {
-    "id": "g2b_R26BK01688241_000",
-    "title": "제31회 남도음식문화큰잔치 행사대행 용역",
-    "category": "용역",
-    "organization": "(재)남도음식문화큰잔치",
-    "executor": "(재)남도음식문화큰잔치",
-    "startDate": "2026-08-19",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-19",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01688241",
-    "dDay": 0,
-    "summary": "일반경쟁",
-    "source": "g2b",
-    "budget": 681818182
-  },
-  {
-    "id": "g2b_R26BK01688617_000",
-    "title": "2026년 한국보건산업진흥원 조직문화개선 지원 및 다면평가 개선",
-    "category": "용역",
-    "organization": "한국보건산업진흥원",
-    "executor": "한국보건산업진흥원",
-    "startDate": "2026-08-19",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-19",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01688617",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 54545455
-  },
-  {
-    "id": "g2b_R26BK01685594_000",
-    "title": "인공지능 예지보전을 위한 시계열 드론 및 공간정보 데이터셋 구축",
-    "category": "용역",
-    "organization": "국립금오공과대학교산학협력단",
-    "executor": "국립금오공과대학교산학협력단",
-    "startDate": "2026-08-20",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-20",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01685594",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 81818182
-  },
-  {
-    "id": "g2b_R26BK01689774_000",
-    "title": "[글로컬][AI기본교육]2026년 AI 분야 K-MOOC 콘텐츠 개발 용역",
-    "category": "용역",
-    "organization": "건국대학교",
-    "executor": "건국대학교",
-    "startDate": "2026-08-20",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-20",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01689774",
-    "dDay": 0,
-    "summary": "일반경쟁",
-    "source": "g2b",
-    "budget": 27272727
-  },
-  {
-    "id": "g2b_R26BK01676743_000",
-    "title": "예술극장 공연용 프로젝터 구매",
-    "category": "물품",
-    "organization": "조달청 광주지방조달청",
-    "executor": "문화체육관광부 국립아시아문화전당",
-    "startDate": "2026-08-14",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-14",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01676743",
-    "dDay": 0,
-    "summary": "일반경쟁",
-    "source": "g2b",
-    "budget": 370400000
-  },
-  {
-    "id": "g2b_R26BK01689620_000",
-    "title": "영화국제관광고등학교 2027학년도 신입생 교복 학교주관구매 입찰공고",
-    "category": "물품",
-    "organization": "인천광역시교육청 영화국제관광고등학교",
-    "executor": "인천광역시교육청 영화국제관광고등학교",
-    "startDate": "2026-08-20",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-20",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01689620",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 50117818
-  },
-  {
-    "id": "g2b_R26BK01690415_000",
-    "title": "온라인 게임물 4대 불법행위 실태조사 연구",
-    "category": "용역",
-    "organization": "게임물관리위원회",
-    "executor": "게임물관리위원회",
-    "startDate": "2026-08-20",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-20",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01690415",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 20000000
-  },
-  {
-    "id": "g2b_R26BK01682485_000",
-    "title": "2026년 국민건강보험공단 소득 정산제도 홍보영상 제작 협력사 선정",
-    "category": "용역",
-    "organization": "한국언론진흥재단",
-    "executor": "한국언론진흥재단",
-    "startDate": "2026-08-21",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-21",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01682485",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 81818182
-  },
-  {
-    "id": "g2b_R26BK01690696_000",
-    "title": "인공지능 계산용 GPU 서버 구매 및 설치(재공고)",
-    "category": "물품",
-    "organization": "한국해양과학기술원",
-    "executor": "한국해양과학기술원",
-    "startDate": "2026-08-20",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-20",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01690696",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 90909091
-  },
-  {
-    "id": "g2b_R26BK01690360_000",
-    "title": "2027학년도 세종예술고등학교 교복 학교주관구매(규격가격 동시) 입찰 공고",
-    "category": "물품",
-    "organization": "세종특별자치시교육청 세종예술고등학교",
-    "executor": "세종특별자치시교육청 세종예술고등학교",
-    "startDate": "2026-08-20",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-20",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01690360",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 25058182
-  },
-  {
-    "id": "g2b_R26BK01691011_000",
-    "title": "인공지능 계산용 GPU 구매 및 설치",
-    "category": "물품",
-    "organization": "한국해양과학기술원",
-    "executor": "한국해양과학기술원",
-    "startDate": "2026-08-20",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-20",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01691011",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 118181818
-  },
-  {
-    "id": "g2b_R26BK01689163_000",
-    "title": "경주 역사문화 기록화사업 사진전 및 도록·홍보물 제작",
-    "category": "용역",
-    "organization": "재단법인 신라문화유산연구원",
-    "executor": "재단법인 신라문화유산연구원",
-    "startDate": "2026-08-21",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-21",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01689163",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 37181818
-  },
-  {
-    "id": "g2b_R26BK01692407_000",
-    "title": "2026년 재난응급의료 종합훈련대회 장소 대관(숙식 포함) 용역",
-    "category": "용역",
-    "organization": "국립중앙의료원",
-    "executor": "국립중앙의료원",
-    "startDate": "2026-08-21",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-21",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01692407",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 33200000
-  },
-  {
-    "id": "g2b_R26BK01692591_000",
-    "title": "제3기 개도국 기능경기 역량강화 사업(K-STAR) 종료평가 연구용역",
-    "category": "용역",
-    "organization": "한국산업인력공단 글로벌숙련기술진흥원",
-    "executor": "한국산업인력공단 글로벌숙련기술진흥원",
-    "startDate": "2026-08-21",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-21",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01692591",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 31818182
-  },
-  {
-    "id": "g2b_R26BK01692405_000",
-    "title": "강치아일랜드 시즌3 TV시리즈 애니메이션 제작 용역(재)",
-    "category": "용역",
-    "organization": "경북문화재단 콘텐츠진흥원",
-    "executor": "경북문화재단 콘텐츠진흥원",
-    "startDate": "2026-08-21",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-21",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01692405",
-    "dDay": 0,
-    "summary": "일반경쟁",
-    "source": "g2b",
-    "budget": 481818182
-  },
-  {
-    "id": "g2b_R26BK01693251_000",
-    "title": "두류 젊음의 예술 대축제 운영 용역(재공고)",
-    "category": "용역",
-    "organization": "재단법인 대구전통시장진흥재단",
-    "executor": "재단법인 대구전통시장진흥재단",
-    "startDate": "2026-08-21",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-21",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01693251",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 70000000
-  },
-  {
-    "id": "g2b_R26BK01687776_000",
-    "title": "2026년 인천 AI·SW미래채움 교육페스티벌 운영용역",
-    "category": "용역",
-    "organization": "인천테크노파크",
-    "executor": "인천테크노파크",
-    "startDate": "2026-08-21",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-21",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01687776",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 134767273
-  },
-  {
-    "id": "g2b_R26BK01693617_000",
-    "title": "병수문화 소규모하수처리시설 증설사업 국도분 폐기물 처리용역",
-    "category": "용역",
-    "organization": "대구광역시 군위군",
-    "executor": "대구광역시 군위군",
-    "startDate": "2026-08-24",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-24",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01693617",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 106090909
-  },
-  {
-    "id": "g2b_R26BK01692384_000",
-    "title": "(재공고)2027학년도 충북예술고등학교 교복(동복·하복) 학교주관구매 입찰공고 - 2단계 경쟁 입찰(규격․가격분리 동시입찰) ",
-    "category": "물품",
-    "organization": "충청북도교육청 충북예술고등학교",
-    "executor": "충청북도교육청 충북예술고등학교",
-    "startDate": "2026-08-21",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-21",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01692384",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 31324545
-  },
-  {
-    "id": "g2b_R26BK01692217_000",
-    "title": "[2차 재공고] 2026년 서울특별시 의료장비 통합구매(서남병원, 의료영상처리장치(관절경))",
-    "category": "물품",
-    "organization": "서울특별시서울의료원",
-    "executor": "서울특별시서울의료원",
-    "startDate": "2026-08-21",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-21",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01692217",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 9
-  },
-  {
-    "id": "g2b_R26BK01693237_000",
-    "title": "대전교통문화연수원 어린이제품 안전체험관 구축 제조구매설치",
-    "category": "물품",
-    "organization": "대전교통공사",
-    "executor": "대전교통공사",
-    "startDate": "2026-08-21",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-21",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01693237",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 90909091
-  },
-  {
-    "id": "g2b_R26BK01694479_000",
-    "title": "한국방송통신전파진흥원 에너지진단 용역",
-    "category": "용역",
-    "organization": "한국방송통신전파진흥원",
-    "executor": "한국방송통신전파진흥원",
-    "startDate": "2026-08-24",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-24",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694479",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 15266664
-  },
-  {
-    "id": "g2b_R26BK01698128_000",
-    "title": "코웍스튜디오 「영상 촬영장비 납품 및 시스템 세팅」용역",
-    "category": "용역",
-    "organization": "거제고현자율상권조합",
-    "executor": "거제고현자율상권조합",
-    "startDate": "2026-08-25",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-25",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698128",
-    "dDay": 0,
-    "summary": "일반경쟁",
-    "source": "g2b",
-    "budget": 40000000
-  },
-  {
-    "id": "g2b_R26BK01694944_000",
-    "title": "2026년 제31회 부산국제영화제 조립식 관람석 임차 및 설치 용역 업체 모집 공고",
-    "category": "물품",
-    "organization": "(사)부산국제영화제",
-    "executor": "(사)부산국제영화제",
-    "startDate": "2026-08-24",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-24",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694944",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 28500000
-  },
-  {
-    "id": "g2b_R26BK01698250_000",
-    "title": "광주학생교육문화회관 수영장 수중로봇청소기 구입",
-    "category": "물품",
-    "organization": "전남광주통합특별시교육청 전남광주통합특별시교육청광주학생교육문화회관",
-    "executor": "전남광주통합특별시교육청 전남광주통합특별시교육청광주학생교육문화회관",
-    "startDate": "2026-08-25",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-25",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698250",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 32000000
-  },
-  {
-    "id": "g2b_R26BK01696241_000",
-    "title": "2026년 팔공산서부 문화유산지구 정비공사",
-    "category": "공사",
-    "organization": "국립공원공단 팔공산국립공원서부사무소",
-    "executor": "국립공원공단 팔공산국립공원서부사무소",
-    "startDate": "2026-08-25",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-25",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01696241",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 140909091
-  },
-  {
-    "id": "g2b_R26BK01697840_000",
-    "title": "문화동15통소규모공영주차장조성(철거)",
-    "category": "공사",
-    "organization": "충청북도 충주시",
-    "executor": "충청북도 충주시",
-    "startDate": "2026-08-25",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-25",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01697840",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 96727273
-  },
-  {
-    "id": "g2b_R26BK01698414_000",
-    "title": "한국식품연구원 문화광장 및 본관동 계단 보수ㆍ개선공사",
-    "category": "공사",
-    "organization": "한국식품연구원",
-    "executor": "한국식품연구원",
-    "startDate": "2026-08-26",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-26",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698414",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 90854545
-  },
-  {
-    "id": "g2b_R26BK01698862_000",
-    "title": "제20회 수원시 평생학습축제 행사 용역",
-    "category": "용역",
-    "organization": "경기도 수원시",
-    "executor": "경기도 수원시",
-    "startDate": "2026-08-26",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-26",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698862",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 63636364
-  },
-  {
-    "id": "g2b_R26BK01698874_000",
-    "title": "충남교육청교육연수원 2026년 미래설계과정 3기 제주 역사문화 탐방 위탁용역",
-    "category": "용역",
-    "organization": "충청남도교육청 충청남도교육연수원",
-    "executor": "충청남도교육청 충청남도교육연수원",
-    "startDate": "2026-08-26",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-26",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698874",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 27441810
-  },
-  {
-    "id": "g2b_R26BK01699895_000",
-    "title": "상주 상상예술촌 조성사업 리모델링공사 폐기물처리 용역",
-    "category": "용역",
-    "organization": "경상북도 상주시",
-    "executor": "경상북도 상주시",
-    "startDate": "2026-08-26",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-26",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01699895",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 24754545
-  },
-  {
-    "id": "g2b_R26BK01698995_000",
-    "title": "(긴급)원주시 축제장 다회용기 관리 용역",
-    "category": "용역",
-    "organization": "강원특별자치도 원주시",
-    "executor": "강원특별자치도 원주시",
-    "startDate": "2026-08-26",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-26",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698995",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 154979091
-  },
-  {
-    "id": "g2b_R26BK01693944_001",
-    "title": "「K-거상」 AI 플레이어블 콘텐츠 제작 용역 (소액수의) 견적 제출 변경공고",
-    "category": "용역",
-    "organization": "재단법인 경상남도 관광재단",
-    "executor": "재단법인 경상남도 관광재단",
-    "startDate": "2026-08-27",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-27",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01693944",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 90909091
-  },
-  {
-    "id": "g2b_R26BK01700169_000",
-    "title": "속초 음식문화복합공간 조성사업 건축감리용역",
-    "category": "용역",
-    "organization": "강원특별자치도 속초시",
-    "executor": "강원특별자치도 속초시",
-    "startDate": "2026-08-26",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-26",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700169",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 34672727
-  },
-  {
-    "id": "g2b_R26BK01699755_000",
-    "title": "ARAA강 와이어로드",
-    "category": "물품",
-    "organization": "한국재료연구원",
-    "executor": "한국재료연구원",
-    "startDate": "2026-08-26",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-26",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01699755",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 92440000
-  },
-  {
-    "id": "g2b_R26BK01700327_000",
-    "title": "폐산업시설 문화재생사업 2단계(2차)(1차분,전체분)",
-    "category": "공사",
-    "organization": "강원특별자치도 삼척시",
-    "executor": "강원특별자치도 삼척시",
-    "startDate": "2026-08-26",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-26",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700327",
-    "dDay": 0,
-    "summary": "제한경쟁",
-    "source": "g2b",
-    "budget": 2757004545
-  },
-  {
-    "id": "g2b_R26BK01697769_000",
-    "title": "2026년 중복장애 아동을 위한 도서관자료 제작사업",
-    "category": "용역",
-    "organization": "조달청 서울지방조달청",
-    "executor": "문화체육관광부 국립장애인도서관",
-    "startDate": "2026-08-28",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-28",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01697769",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 450327273
-  },
-  {
-    "id": "g2b_R26BK01702928_000",
-    "title": "북서울꿈의숲 가을 음악회 행사 용역",
-    "category": "용역",
-    "organization": "서울특별시 북부공원여가센터",
-    "executor": "서울특별시 북부공원여가센터",
-    "startDate": "2026-08-28",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-28",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702928",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 9090909
-  },
-  {
-    "id": "g2b_R26BK01703445_000",
-    "title": "KUSF 영상 AI 아카이빙 시스템 고도화 구축",
-    "category": "용역",
-    "organization": "조달청 서울지방조달청",
-    "executor": "(사）한국대학스포츠협의회",
-    "startDate": "2026-08-28",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-28",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01703445",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 142727273
-  },
-  {
-    "id": "g2b_R26BK01706774_000",
-    "title": "풍류일가〈김준수×하윤주×채수현×두번째달〉기획공연 용역",
-    "category": "용역",
-    "organization": "강원특별자치도 강릉시",
-    "executor": "강원특별자치도 강릉시",
-    "startDate": "2026-09-01",
-    "endDate": "2026-09-01",
-    "registDate": "2026-09-01",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706774",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 55818181
-  },
-  {
-    "id": "g2b_R26BK01706571_000",
-    "title": "26년 조직문화 진단 및 공직혁신 과제 도출 사업",
-    "category": "용역",
-    "organization": "지식재산처",
-    "executor": "지식재산처",
-    "startDate": "2026-09-01",
-    "endDate": "2026-09-01",
-    "registDate": "2026-09-01",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706571",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 20000000
-  },
-  {
-    "id": "g2b_R26BK01705052_000",
-    "title": "다대관리소 하이브리드 모터카 수선",
-    "category": "물품",
-    "organization": "부산교통공사",
-    "executor": "부산교통공사",
-    "startDate": "2026-08-31",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-31",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705052",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 12500000
-  },
-  {
-    "id": "g2b_R26BK01705075_000",
-    "title": "[수의시담] 2026년 방송장비(VIDEO SERVER SYSTEM  등) 구매",
-    "category": "물품",
-    "organization": "한국교육방송공사",
-    "executor": "한국교육방송공사",
-    "startDate": "2026-08-31",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-31",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705075",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 396000000
-  },
-  {
-    "id": "g2b_R26BK01706643_000",
-    "title": "[수의시담] 2026년 하반기 용인시도서관 해외원서(영미, 다문화) 구입",
-    "category": "물품",
-    "organization": "경기도 용인시",
-    "executor": "경기도 용인시",
-    "startDate": "2026-08-31",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-31",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706643",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 47565600
-  },
-  {
-    "id": "g2b_R26BK01706691_000",
-    "title": "진주실크로드 내 10월 축제 연계 경관 콘텐츠 조성을 위한 실크등 구입",
-    "category": "물품",
-    "organization": "경상남도 진주시",
-    "executor": "경상남도 진주시",
-    "startDate": "2026-08-31",
-    "endDate": "2026-09-01",
-    "registDate": "2026-08-31",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706691",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 44850000
-  },
-  {
-    "id": "g2b_R26BK01705736_000",
-    "title": "2027년도 문화유산국민신탁 탁상용 달력 제작",
-    "category": "물품",
-    "organization": "문화유산국민신탁",
-    "executor": "문화유산국민신탁",
-    "startDate": "2026-09-01",
-    "endDate": "2026-09-01",
-    "registDate": "2026-09-01",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705736",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 52890909
-  },
-  {
-    "id": "g2b_R26BK01704776_000",
-    "title": "2026년 안성맞춤 남사당 바우덕이축제 임시주차장 조성공사",
-    "category": "공사",
-    "organization": "경기도 안성시 문화예술사업소",
-    "executor": "경기도 안성시 문화예술사업소",
-    "startDate": "2026-09-01",
-    "endDate": "2026-09-01",
-    "registDate": "2026-09-01",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704776",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 30000000
-  },
-  {
-    "id": "g2b_R26BK01707430_000",
-    "title": "문화예술로 외 2개소 가로수 맹어제거 공사",
-    "category": "공사",
-    "organization": "경기도 안성시",
-    "executor": "경기도 안성시",
-    "startDate": "2026-09-01",
-    "endDate": "2026-09-01",
-    "registDate": "2026-09-01",
-    "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01707430",
-    "dDay": 0,
-    "summary": "수의계약",
-    "source": "g2b",
-    "budget": 22779091
-  },
-  {
     "id": "g2b_R26BK01637715_000",
     "title": "제1차 기후에너지환경부 인공지능 정보화 기본계획 수립",
     "category": "용역",
@@ -999,7 +9,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-07-16",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01637715",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 272727273
@@ -1014,7 +24,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-12",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01678014",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 54545455
@@ -1029,7 +39,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-11",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01673632",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 445152727
@@ -1044,7 +54,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-12",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01680081",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 130909091
@@ -1059,7 +69,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-18",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01684668",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 372727273
@@ -1074,7 +84,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-19",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01687443",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 264090909
@@ -1089,7 +99,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-19",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01687535",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 90872727
@@ -1104,7 +114,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-19",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01686706",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 134545455
@@ -1119,7 +129,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-20",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01689128",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 248180000
@@ -1134,7 +144,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-21",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01691498",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 269271818
@@ -1149,7 +159,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-21",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01692670",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 165013200
@@ -1164,7 +174,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-21",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01693175",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 27272727
@@ -1179,7 +189,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-21",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01693210",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 90909091
@@ -1194,7 +204,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-22",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01693657",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 523426700
@@ -1209,7 +219,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-21",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01692956",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 22365455
@@ -1224,7 +234,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-21",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01691810",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 514900000
@@ -1239,7 +249,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698080",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 153723636
@@ -1254,7 +264,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01696345",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 60000000
@@ -1269,7 +279,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01696845",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 33000000
@@ -1284,7 +294,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698330",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 282223182
@@ -1299,7 +309,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01697831",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 252783636
@@ -1314,7 +324,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01699305",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 35454545
@@ -1329,7 +339,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700566",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 72695455
@@ -1344,7 +354,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700382",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 90909091
@@ -1359,7 +369,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01699768",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 32527273
@@ -1374,7 +384,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01699508",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 28566364
@@ -1389,7 +399,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700738",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 36363636
@@ -1404,7 +414,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700271",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 154283000
@@ -1419,7 +429,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01701732",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 108612727
@@ -1434,7 +444,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702100",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 36250000
@@ -1449,7 +459,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702182",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 26440454
@@ -1464,7 +474,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01701436",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 27272727
@@ -1479,7 +489,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702404",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 27272727
@@ -1494,7 +504,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-09-01",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01707362",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 9534545
@@ -1509,7 +519,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705622",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 4121818
@@ -1524,7 +534,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702798",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 245400000
@@ -1539,7 +549,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702970",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 270909091
@@ -1554,7 +564,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702441",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 70193645
@@ -1569,7 +579,7 @@
     "endDate": "2026-09-02",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706210",
-    "dDay": 1,
+    "dDay": 0,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 42681818
@@ -1584,7 +594,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-07-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01646839",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 663636364
@@ -1599,7 +609,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-07-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01649516",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 727018182
@@ -1614,7 +624,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-13",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01680652",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 386300000
@@ -1629,7 +639,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-20",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01688513",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 154498485
@@ -1644,7 +654,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-21",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01691014",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 454545455
@@ -1659,7 +669,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698485",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 147360000
@@ -1674,7 +684,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700104",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 38707273
@@ -1689,7 +699,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698228",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 86363636
@@ -1704,7 +714,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698234",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 89090909
@@ -1719,7 +729,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698239",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 100000000
@@ -1734,7 +744,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700393",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 90900000
@@ -1749,7 +759,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01697410",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 424279091
@@ -1764,7 +774,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01703055",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 42669000
@@ -1779,7 +789,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01703292",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 45454545
@@ -1794,7 +804,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702267",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 73080900
@@ -1809,7 +819,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-09-01",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705712",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 19090909
@@ -1824,7 +834,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-09-01",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705686",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 92727273
@@ -1839,7 +849,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702595",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 59000000
@@ -1854,7 +864,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01703229",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 36350000
@@ -1869,7 +879,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01703311",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 71545000
@@ -1884,7 +894,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01696698",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 113886273
@@ -1899,7 +909,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01697886",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 202328788
@@ -1914,7 +924,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700717",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 1167486303
@@ -1929,7 +939,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702709",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 57270000
@@ -1944,7 +954,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702727",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 82720000
@@ -1959,7 +969,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702745",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 28129091
@@ -1974,7 +984,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01703603",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 24545455
@@ -1989,7 +999,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01703683",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 129209091
@@ -2004,7 +1014,7 @@
     "endDate": "2026-09-03",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704101",
-    "dDay": 2,
+    "dDay": 1,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 173269091
@@ -2019,7 +1029,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-07-29",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01655523",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 646720000
@@ -2034,7 +1044,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-12",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01677543",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 304418182
@@ -2049,7 +1059,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-13",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01680162",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 399636364
@@ -2064,7 +1074,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-19",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01686692",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 25454545
@@ -2079,7 +1089,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-21",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01681625",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 314545455
@@ -2094,7 +1104,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-21",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01692568",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 118181818
@@ -2109,7 +1119,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-21",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01688530",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 52200000
@@ -2124,7 +1134,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-21",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01693590",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 54545456
@@ -2139,7 +1149,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01693731",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 181818182
@@ -2154,7 +1164,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-21",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01691331",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 454545455
@@ -2169,7 +1179,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01681095",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 66718182
@@ -2184,7 +1194,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694379",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 45454545
@@ -2199,7 +1209,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694442",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 90909091
@@ -2214,7 +1224,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694572",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 34269718
@@ -2229,7 +1239,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694387",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 363636364
@@ -2244,7 +1254,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694289",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 121395682
@@ -2259,7 +1269,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694724",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 31500873
@@ -2274,7 +1284,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694747",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 171690000
@@ -2289,7 +1299,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01692290",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 54545455
@@ -2304,7 +1314,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694808",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 21000000
@@ -2319,7 +1329,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694904",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 22045455
@@ -2334,7 +1344,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694959",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 89090909
@@ -2349,7 +1359,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694900",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 120000000
@@ -2364,7 +1374,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694354",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 44435536
@@ -2379,7 +1389,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01695006",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 36363636
@@ -2394,7 +1404,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01695157",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 72727273
@@ -2409,7 +1419,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01695640",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 67181818
@@ -2424,7 +1434,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694897",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 105638182
@@ -2439,7 +1449,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01696130",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 17272727
@@ -2454,7 +1464,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694210",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 44545455
@@ -2469,7 +1479,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694953",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 223000000
@@ -2484,7 +1494,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01693067",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 109090909
@@ -2499,7 +1509,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01697014",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 36360000
@@ -2514,7 +1524,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698904",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 53900000
@@ -2529,7 +1539,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700648",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 103636364
@@ -2544,7 +1554,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700775",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 170858182
@@ -2559,7 +1569,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01699678",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 513725455
@@ -2574,7 +1584,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01701328",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 72179091
@@ -2589,7 +1599,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704873",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 63636364
@@ -2604,7 +1614,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705100",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 78181818
@@ -2619,7 +1629,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706005",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 100000000
@@ -2634,7 +1644,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702946",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 44900000
@@ -2649,7 +1659,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704332",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 49863636
@@ -2664,7 +1674,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705765",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 62644545
@@ -2679,7 +1689,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705767",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 79030000
@@ -2694,7 +1704,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705468",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 72136364
@@ -2709,7 +1719,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706779",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 26690400
@@ -2724,7 +1734,7 @@
     "endDate": "2026-09-04",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706720",
-    "dDay": 3,
+    "dDay": 2,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 232309091
@@ -2739,7 +1749,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-07-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01650910",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 2950000000
@@ -2754,7 +1764,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-10",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01673245",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 81818182
@@ -2769,7 +1779,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-18",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01686972",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 68181818
@@ -2784,7 +1794,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-19",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01688311",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 727272727
@@ -2799,7 +1809,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-19",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01687242",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 35158181
@@ -2814,7 +1824,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01693905",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 69454545
@@ -2829,7 +1839,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01696256",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 280000000
@@ -2844,7 +1854,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01696343",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 81818182
@@ -2859,7 +1869,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01696217",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 86318182
@@ -2874,7 +1884,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01696821",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 150909091
@@ -2889,7 +1899,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01696801",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 818181818
@@ -2904,7 +1914,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01697239",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 18172727
@@ -2919,7 +1929,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01696342",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 45454545
@@ -2934,7 +1944,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01697571",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 36363636
@@ -2949,7 +1959,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01696636",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 45000000
@@ -2964,7 +1974,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01697843",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 62690909
@@ -2979,7 +1989,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698518",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 99090909
@@ -2994,7 +2004,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01697532",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 136363636
@@ -3009,7 +2019,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01696328",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 90504909
@@ -3024,7 +2034,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01697661",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 313236
@@ -3039,7 +2049,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698578",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 81818182
@@ -3054,7 +2064,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698992",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 45450000
@@ -3069,7 +2079,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698704",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 220000000
@@ -3084,7 +2094,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01699291",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 86363636
@@ -3099,7 +2109,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01699545",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 163636364
@@ -3114,7 +2124,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01699328",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 90909091
@@ -3129,7 +2139,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01699669",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 211818182
@@ -3144,7 +2154,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698692",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 145454545
@@ -3159,7 +2169,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700474",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 44545455
@@ -3174,7 +2184,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700643",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 60000000
@@ -3189,7 +2199,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698578",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 81818182
@@ -3204,7 +2214,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01701135",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 33000000
@@ -3219,7 +2229,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01701355",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 36352345
@@ -3234,7 +2244,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698769",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 54770000
@@ -3249,7 +2259,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01696905",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 148013636
@@ -3264,7 +2274,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01699750",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 44277273
@@ -3279,7 +2289,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702119",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 45454546
@@ -3294,7 +2304,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702396",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 47272727
@@ -3309,7 +2319,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706761",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 514981818
@@ -3324,7 +2334,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706494",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 43181818
@@ -3339,7 +2349,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01703441",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 41390909
@@ -3354,7 +2364,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705125",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 20160000
@@ -3369,7 +2379,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-09-01",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01707312",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 68181818
@@ -3384,7 +2394,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702801",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 86828182
@@ -3399,7 +2409,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704739",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 604727273
@@ -3414,7 +2424,7 @@
     "endDate": "2026-09-07",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706758",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 313118181
@@ -3429,7 +2439,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-18",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01684655",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 100000000
@@ -3444,7 +2454,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-18",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01686417",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 90909091
@@ -3459,7 +2469,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-20",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01689325",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 1272727273
@@ -3474,7 +2484,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-21",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01690715",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 3599000000
@@ -3489,7 +2499,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01693913",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 200000000
@@ -3504,7 +2514,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01693915",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 136363636
@@ -3519,7 +2529,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01696509",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 98090909
@@ -3534,7 +2544,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01697434",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 56363636
@@ -3549,7 +2559,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01697064",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 150000000
@@ -3564,7 +2574,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698253",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 90000000
@@ -3579,7 +2589,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698508",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 31272727
@@ -3594,7 +2604,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698598",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 118181818
@@ -3609,7 +2619,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698421",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 79818182
@@ -3624,7 +2634,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698354",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 71800000
@@ -3639,7 +2649,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698803",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 86363636
@@ -3654,7 +2664,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01699551",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 500000000
@@ -3669,7 +2679,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01696735",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 45454545
@@ -3684,7 +2694,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698495",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 45454545
@@ -3699,7 +2709,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698633",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 34000000
@@ -3714,7 +2724,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700377",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 163636364
@@ -3729,7 +2739,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700033",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 45454545
@@ -3744,7 +2754,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700511",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 71236364
@@ -3759,7 +2769,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700850",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 57545455
@@ -3774,7 +2784,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01701595",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 293660182
@@ -3789,7 +2799,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700391",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 49472727
@@ -3804,7 +2814,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700853",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 220010000
@@ -3819,7 +2829,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702927",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 141327273
@@ -3834,7 +2844,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01703187",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 50000000
@@ -3849,7 +2859,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01703286",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 62500000
@@ -3864,7 +2874,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01703226",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 15000000
@@ -3879,7 +2889,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01703409",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 263636364
@@ -3894,7 +2904,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01703352",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 136207273
@@ -3909,7 +2919,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01703358",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 127160801
@@ -3924,7 +2934,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706423",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 27795000
@@ -3939,7 +2949,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-09-01",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706530",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 30000000
@@ -3954,7 +2964,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704577",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 50000000
@@ -3969,7 +2979,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705074",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 54545455
@@ -3984,7 +2994,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705160",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 256643755
@@ -3999,7 +3009,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705396",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 62727273
@@ -4014,7 +3024,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702814",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 112483064
@@ -4029,7 +3039,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700129",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 27582613561
@@ -4044,7 +3054,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-09-01",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704373",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 9619765804
@@ -4059,7 +3069,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-09-01",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01707062",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 282223182
@@ -4074,7 +3084,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-09-01",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705472",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 445045000
@@ -4089,7 +3099,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-30",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704305",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 799791819
@@ -4104,7 +3114,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705344",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 89467273
@@ -4119,7 +3129,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704417",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 887620000
@@ -4134,7 +3144,7 @@
     "endDate": "2026-09-08",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706439",
-    "dDay": 7,
+    "dDay": 6,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 130829091
@@ -4149,7 +3159,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-07-30",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01659187",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 268181818
@@ -4164,7 +3174,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-08-19",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01687692",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 136363636
@@ -4179,7 +3189,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-08-19",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01687166",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 163636364
@@ -4194,7 +3204,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-08-19",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01688532",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 163636364
@@ -4209,7 +3219,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-08-19",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01685658",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 454554545
@@ -4224,7 +3234,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-08-20",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01688868",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 245454545
@@ -4239,7 +3249,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694102",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 2184545455
@@ -4254,7 +3264,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694506",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 24545455
@@ -4269,7 +3279,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01691543",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 309090909
@@ -4284,7 +3294,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694851",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 400000000
@@ -4299,7 +3309,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700446",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 81818182
@@ -4314,7 +3324,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700512",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 95390236
@@ -4329,7 +3339,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700537",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 690909091
@@ -4344,7 +3354,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700819",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 18181818
@@ -4359,7 +3369,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01692788",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 138744327
@@ -4374,7 +3384,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700113",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 125263636
@@ -4389,7 +3399,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-09-01",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01703854",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 164800000
@@ -4404,7 +3414,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704963",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 23000000
@@ -4419,7 +3429,7 @@
     "endDate": "2026-09-09",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704106",
-    "dDay": 8,
+    "dDay": 7,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 128668182
@@ -4434,7 +3444,7 @@
     "endDate": "2026-09-10",
     "registDate": "2026-08-20",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01686351",
-    "dDay": 9,
+    "dDay": 8,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 172727273
@@ -4449,7 +3459,7 @@
     "endDate": "2026-09-10",
     "registDate": "2026-08-20",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01690345",
-    "dDay": 9,
+    "dDay": 8,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 254545455
@@ -4464,7 +3474,7 @@
     "endDate": "2026-09-10",
     "registDate": "2026-08-21",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01686053",
-    "dDay": 9,
+    "dDay": 8,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 154545455
@@ -4479,7 +3489,7 @@
     "endDate": "2026-09-10",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01693985",
-    "dDay": 9,
+    "dDay": 8,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 809090909
@@ -4494,7 +3504,7 @@
     "endDate": "2026-09-10",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01699670",
-    "dDay": 9,
+    "dDay": 8,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 136363636
@@ -4509,7 +3519,7 @@
     "endDate": "2026-09-10",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700099",
-    "dDay": 9,
+    "dDay": 8,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 26700000
@@ -4524,7 +3534,7 @@
     "endDate": "2026-09-10",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700285",
-    "dDay": 9,
+    "dDay": 8,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 51100000
@@ -4539,7 +3549,7 @@
     "endDate": "2026-09-10",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702784",
-    "dDay": 9,
+    "dDay": 8,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 80272727
@@ -4554,7 +3564,7 @@
     "endDate": "2026-09-10",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702853",
-    "dDay": 9,
+    "dDay": 8,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 133636364
@@ -4569,7 +3579,7 @@
     "endDate": "2026-09-10",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694974",
-    "dDay": 9,
+    "dDay": 8,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 116363636
@@ -4584,7 +3594,7 @@
     "endDate": "2026-09-10",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698848",
-    "dDay": 9,
+    "dDay": 8,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 1816000000
@@ -4599,7 +3609,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-19",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01684971",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 136056364
@@ -4614,7 +3624,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-20",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01689573",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 109090909
@@ -4629,7 +3639,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01699168",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 29500000
@@ -4644,7 +3654,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01699262",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 8132969656
@@ -4659,7 +3669,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702827",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 109090909
@@ -4674,7 +3684,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704399",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 136363636
@@ -4689,7 +3699,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704401",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 29090909
@@ -4704,7 +3714,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694069",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 72727273
@@ -4719,7 +3729,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702880",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 145454545
@@ -4734,7 +3744,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704621",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 127160000
@@ -4749,7 +3759,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704704",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 90909091
@@ -4764,7 +3774,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01701791",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 27272727
@@ -4779,7 +3789,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704186",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 40000000
@@ -4794,7 +3804,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706205",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 723376273
@@ -4809,7 +3819,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706207",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 65454545
@@ -4824,7 +3834,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706430",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 89090909
@@ -4839,7 +3849,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704693",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 343864
@@ -4854,7 +3864,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706067",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 209866700
@@ -4869,7 +3879,7 @@
     "endDate": "2026-09-11",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706140",
-    "dDay": 10,
+    "dDay": 9,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 81727273
@@ -4884,7 +3894,7 @@
     "endDate": "2026-09-14",
     "registDate": "2026-08-10",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01674905",
-    "dDay": 13,
+    "dDay": 12,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 6013530000
@@ -4899,7 +3909,7 @@
     "endDate": "2026-09-14",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702857",
-    "dDay": 13,
+    "dDay": 12,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 71818182
@@ -4914,7 +3924,7 @@
     "endDate": "2026-09-14",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01703010",
-    "dDay": 13,
+    "dDay": 12,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 88636364
@@ -4929,7 +3939,7 @@
     "endDate": "2026-09-14",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704895",
-    "dDay": 13,
+    "dDay": 12,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 45454545
@@ -4944,7 +3954,7 @@
     "endDate": "2026-09-14",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704726",
-    "dDay": 13,
+    "dDay": 12,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 91849091
@@ -4959,7 +3969,7 @@
     "endDate": "2026-09-14",
     "registDate": "2026-09-01",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706956",
-    "dDay": 13,
+    "dDay": 12,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 138396091
@@ -4974,7 +3984,7 @@
     "endDate": "2026-09-14",
     "registDate": "2026-09-01",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706968",
-    "dDay": 13,
+    "dDay": 12,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 47272727
@@ -4989,7 +3999,7 @@
     "endDate": "2026-09-14",
     "registDate": "2026-09-01",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01707218",
-    "dDay": 13,
+    "dDay": 12,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 24545455
@@ -5004,7 +4014,7 @@
     "endDate": "2026-09-14",
     "registDate": "2026-09-01",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01707219",
-    "dDay": 13,
+    "dDay": 12,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 114048000
@@ -5019,7 +4029,7 @@
     "endDate": "2026-09-14",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01703158",
-    "dDay": 13,
+    "dDay": 12,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 420000000
@@ -5034,7 +4044,7 @@
     "endDate": "2026-09-15",
     "registDate": "2026-08-03",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01663480",
-    "dDay": 14,
+    "dDay": 13,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 272727273
@@ -5049,7 +4059,7 @@
     "endDate": "2026-09-15",
     "registDate": "2026-08-04",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01656841",
-    "dDay": 14,
+    "dDay": 13,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 460000000
@@ -5064,7 +4074,7 @@
     "endDate": "2026-09-15",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01695558",
-    "dDay": 14,
+    "dDay": 13,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 227272727
@@ -5079,7 +4089,7 @@
     "endDate": "2026-09-15",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01693437",
-    "dDay": 14,
+    "dDay": 13,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 145454545
@@ -5094,7 +4104,7 @@
     "endDate": "2026-09-15",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01665246",
-    "dDay": 14,
+    "dDay": 13,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 2184033636
@@ -5109,7 +4119,7 @@
     "endDate": "2026-09-15",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704883",
-    "dDay": 14,
+    "dDay": 13,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 100000000
@@ -5124,7 +4134,7 @@
     "endDate": "2026-09-15",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702854",
-    "dDay": 14,
+    "dDay": 13,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 118181818
@@ -5139,7 +4149,7 @@
     "endDate": "2026-09-15",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01695067",
-    "dDay": 14,
+    "dDay": 13,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 181818182
@@ -5154,7 +4164,7 @@
     "endDate": "2026-09-15",
     "registDate": "2026-09-01",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01699827",
-    "dDay": 14,
+    "dDay": 13,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 112272727
@@ -5169,7 +4179,7 @@
     "endDate": "2026-09-15",
     "registDate": "2026-09-01",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01707097",
-    "dDay": 14,
+    "dDay": 13,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 90909091
@@ -5184,7 +4194,7 @@
     "endDate": "2026-09-15",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01697425",
-    "dDay": 14,
+    "dDay": 13,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 459090909
@@ -5199,7 +4209,7 @@
     "endDate": "2026-09-15",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705399",
-    "dDay": 14,
+    "dDay": 13,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 78300000
@@ -5214,7 +4224,7 @@
     "endDate": "2026-09-16",
     "registDate": "2026-08-06",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01668789",
-    "dDay": 15,
+    "dDay": 14,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 1152727273
@@ -5229,7 +4239,7 @@
     "endDate": "2026-09-16",
     "registDate": "2026-08-05",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01634564",
-    "dDay": 15,
+    "dDay": 14,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 381818182
@@ -5244,7 +4254,7 @@
     "endDate": "2026-09-16",
     "registDate": "2026-08-25",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01693889",
-    "dDay": 15,
+    "dDay": 14,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 143636364
@@ -5259,7 +4269,7 @@
     "endDate": "2026-09-16",
     "registDate": "2026-08-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01692774",
-    "dDay": 15,
+    "dDay": 14,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 112755273
@@ -5274,7 +4284,7 @@
     "endDate": "2026-09-16",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704894",
-    "dDay": 15,
+    "dDay": 14,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 90454545
@@ -5289,7 +4299,7 @@
     "endDate": "2026-09-16",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01706130",
-    "dDay": 15,
+    "dDay": 14,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 1944312727
@@ -5304,7 +4314,7 @@
     "endDate": "2026-09-17",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01698741",
-    "dDay": 16,
+    "dDay": 15,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 131818182
@@ -5319,7 +4329,7 @@
     "endDate": "2026-09-17",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01700439",
-    "dDay": 16,
+    "dDay": 15,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 161818182
@@ -5334,7 +4344,7 @@
     "endDate": "2026-09-17",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702167",
-    "dDay": 16,
+    "dDay": 15,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 154545455
@@ -5349,7 +4359,7 @@
     "endDate": "2026-09-17",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702026",
-    "dDay": 16,
+    "dDay": 15,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 754545455
@@ -5364,7 +4374,7 @@
     "endDate": "2026-09-17",
     "registDate": "2026-09-01",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01707339",
-    "dDay": 16,
+    "dDay": 15,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 388366364
@@ -5379,7 +4389,7 @@
     "endDate": "2026-09-18",
     "registDate": "2026-08-05",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01658883",
-    "dDay": 17,
+    "dDay": 16,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 25124763639
@@ -5394,7 +4404,7 @@
     "endDate": "2026-09-18",
     "registDate": "2026-08-27",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01694702",
-    "dDay": 17,
+    "dDay": 16,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 154000000
@@ -5409,7 +4419,7 @@
     "endDate": "2026-09-18",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01695328",
-    "dDay": 17,
+    "dDay": 16,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 163636364
@@ -5424,7 +4434,7 @@
     "endDate": "2026-09-18",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01696398",
-    "dDay": 17,
+    "dDay": 16,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 988800000
@@ -5439,7 +4449,7 @@
     "endDate": "2026-09-21",
     "registDate": "2026-08-10",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01673211",
-    "dDay": 20,
+    "dDay": 19,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 47272727
@@ -5454,7 +4464,7 @@
     "endDate": "2026-09-21",
     "registDate": "2026-08-11",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01676424",
-    "dDay": 20,
+    "dDay": 19,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 1154545455
@@ -5469,7 +4479,7 @@
     "endDate": "2026-09-21",
     "registDate": "2026-08-20",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01689570",
-    "dDay": 20,
+    "dDay": 19,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 109090909
@@ -5484,7 +4494,7 @@
     "endDate": "2026-09-21",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704827",
-    "dDay": 20,
+    "dDay": 19,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 309090909
@@ -5499,7 +4509,7 @@
     "endDate": "2026-09-21",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01704496",
-    "dDay": 20,
+    "dDay": 19,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 272727273
@@ -5514,7 +4524,7 @@
     "endDate": "2026-09-22",
     "registDate": "2026-09-01",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705181",
-    "dDay": 21,
+    "dDay": 20,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 283748180
@@ -5529,7 +4539,7 @@
     "endDate": "2026-09-22",
     "registDate": "2026-08-31",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01705764",
-    "dDay": 21,
+    "dDay": 20,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 209090909
@@ -5544,7 +4554,7 @@
     "endDate": "2026-09-28",
     "registDate": "2026-08-13",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01682296",
-    "dDay": 27,
+    "dDay": 26,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 479000000
@@ -5559,7 +4569,7 @@
     "endDate": "2026-09-28",
     "registDate": "2026-08-18",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01685552",
-    "dDay": 27,
+    "dDay": 26,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 727272727
@@ -5574,7 +4584,7 @@
     "endDate": "2026-09-28",
     "registDate": "2026-08-14",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01682400",
-    "dDay": 27,
+    "dDay": 26,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 371500000
@@ -5589,7 +4599,7 @@
     "endDate": "2026-09-29",
     "registDate": "2026-08-18",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01684748",
-    "dDay": 28,
+    "dDay": 27,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 441053200
@@ -5604,7 +4614,7 @@
     "endDate": "2026-09-29",
     "registDate": "2026-08-19",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01688008",
-    "dDay": 28,
+    "dDay": 27,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 341000000
@@ -5619,7 +4629,7 @@
     "endDate": "2026-10-01",
     "registDate": "2026-08-21",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01679678",
-    "dDay": 30,
+    "dDay": 29,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 450000000
@@ -5634,7 +4644,7 @@
     "endDate": "2026-10-01",
     "registDate": "2026-08-21",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01691809",
-    "dDay": 30,
+    "dDay": 29,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 309000000
@@ -5649,7 +4659,7 @@
     "endDate": "2026-10-01",
     "registDate": "2026-08-21",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01691808",
-    "dDay": 30,
+    "dDay": 29,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 80000000
@@ -5664,7 +4674,7 @@
     "endDate": "2026-10-06",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01699887",
-    "dDay": 35,
+    "dDay": 34,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 342500000
@@ -5679,7 +4689,7 @@
     "endDate": "2026-10-08",
     "registDate": "2026-08-26",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01697181",
-    "dDay": 37,
+    "dDay": 36,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 575454545
@@ -5694,7 +4704,7 @@
     "endDate": "2026-10-08",
     "registDate": "2026-08-28",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01702146",
-    "dDay": 37,
+    "dDay": 36,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 5000777938
@@ -5709,7 +4719,7 @@
     "endDate": "2026-10-15",
     "registDate": "2026-06-17",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01582516",
-    "dDay": 44,
+    "dDay": 43,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 64813179608
@@ -5724,7 +4734,7 @@
     "endDate": "2027-07-27",
     "registDate": "2026-07-21",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01643414",
-    "dDay": 329,
+    "dDay": 328,
     "summary": "수의계약",
     "source": "g2b",
     "budget": 94999973
@@ -5739,7 +4749,7 @@
     "endDate": "2027-07-29",
     "registDate": "2026-07-13",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01629510",
-    "dDay": 331,
+    "dDay": 330,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 72727273
@@ -28314,7 +27324,7 @@
     "endDate": "2029-10-12",
     "registDate": "2026-04-13",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01450117",
-    "dDay": 1137,
+    "dDay": 1136,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 0
@@ -28329,7 +27339,7 @@
     "endDate": "2034-03-31",
     "registDate": "2026-02-24",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=20230546490",
-    "dDay": 2768,
+    "dDay": 2767,
     "summary": "제한경쟁",
     "source": "g2b",
     "budget": 47727272727
@@ -28344,7 +27354,7 @@
     "endDate": "2037-02-25",
     "registDate": "2026-08-10",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R25BK01244337",
-    "dDay": 3830,
+    "dDay": 3829,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 0
@@ -28359,7 +27369,7 @@
     "endDate": "2037-03-28",
     "registDate": "2026-06-30",
     "detailUrl": "https://www.g2b.go.kr:8340/search.do?bidno=R26BK01607924",
-    "dDay": 3861,
+    "dDay": 3860,
     "summary": "일반경쟁",
     "source": "g2b",
     "budget": 13636363636
