@@ -9,7 +9,7 @@
     "endDate": "2026-11-30",
     "registDate": "20201217142613",
     "detailUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/137100000236",
-    "dDay": 10,
+    "dDay": 7,
     "summary": "국내 문화예술·관광·체육 관련 가맹점에서 이용 가능한 문화누리카드 발급 ",
     "source": "gov24"
   },
@@ -14191,6 +14191,34 @@
     "endDate": "",
     "registDate": "2026-11-19 11:04:05",
     "detailUrl": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000128021",
+    "dDay": 999,
+    "summary": null,
+    "source": "bizinfo"
+  },
+  {
+    "id": "PBLN_000000000128045",
+    "title": "[대전] 2026년 인디게임 IP 마케팅 지원사업 참여기업 모집 공고",
+    "category": "내수,대전,아크릴,포토월,대형배너,홍보굿즈,전시홍보물,2026,스티커,인디게임,대전정보문화산업진흥원,대전광역시,마케팅",
+    "organization": "대전광역시",
+    "executor": "대전정보문화산업진흥원",
+    "startDate": "",
+    "endDate": "",
+    "registDate": "2026-11-20 10:05:58",
+    "detailUrl": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000128045",
+    "dDay": 999,
+    "summary": null,
+    "source": "bizinfo"
+  },
+  {
+    "id": "PBLN_000000000128040",
+    "title": "[제주] 2026년 하반기 도내 문화콘텐츠 분야 기업 및 인적자원 DB 풀(Pool) 모집 공고",
+    "category": "경영,제주,제주특별자치도,2026,제주콘텐츠진흥원,문화콘텐츠,인적자원,DBPOOL,창작자,콘텐츠기업,DB열람페이지,매칭지원",
+    "organization": "제주특별자치도",
+    "executor": "제주콘텐츠진흥원",
+    "startDate": "",
+    "endDate": "",
+    "registDate": "2026-11-20 09:34:20",
+    "detailUrl": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000128040",
     "dDay": 999,
     "summary": null,
     "source": "bizinfo"
