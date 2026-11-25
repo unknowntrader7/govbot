@@ -9,7 +9,7 @@
     "endDate": "2026-11-30",
     "registDate": "20201217142613",
     "detailUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/137100000236",
-    "dDay": 6,
+    "dDay": 5,
     "summary": "국내 문화예술·관광·체육 관련 가맹점에서 이용 가능한 문화누리카드 발급 ",
     "source": "gov24"
   },
@@ -14247,6 +14247,20 @@
     "endDate": "",
     "registDate": "2026-11-23 09:59:38",
     "detailUrl": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000128065",
+    "dDay": 999,
+    "summary": null,
+    "source": "bizinfo"
+  },
+  {
+    "id": "PBLN_000000000128109",
+    "title": "2027년 국산 임산물 판로 확대를 위한 공영홈쇼핑 방송입점 지원사업 업체 모집 공고",
+    "category": "내수,서울,부산,대구,인천,전남광주,대전,울산,세종,경기,강원,충북,충남,전북,경북,경남,제주,임업후계자,신지식농업인,2026,방송송출료,산림조합중앙회,홍보동영상,임업인,판매,방송입점,공영홈쇼핑,산림청,임산물,제작비,소기업,사회적기업,소상공인",
+    "organization": "산림청",
+    "executor": "산림조합중앙회",
+    "startDate": "",
+    "endDate": "",
+    "registDate": "2026-11-25 09:27:26",
+    "detailUrl": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000128109",
     "dDay": 999,
     "summary": null,
     "source": "bizinfo"
